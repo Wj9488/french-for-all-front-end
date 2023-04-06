@@ -87,7 +87,7 @@ const Reviews = () => {
           src="/../public/footer__img_grid_1.png"
           className="footer__img_settings "
           id="footer__img_1"
-          placeholder="blur"
+          
           />
           <Image 
           width={300}
@@ -95,14 +95,14 @@ const Reviews = () => {
           src="/../public/footer__img_2.jpg"
           className="footer__img_settings "
           id="footer__img_2"
-          placeholder="blur"
+          
           />
           <Image 
           width={300}
           height={300}
           src="/../public/footer__img_grid_3.png"
           id="footer__img_3"
-          placeholder="blur"
+          
           />
         </div>
       </section>

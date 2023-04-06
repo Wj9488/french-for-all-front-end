@@ -91,7 +91,7 @@ export default function Home() {
               alt="unsplash test"
               width={600}
               height={600}
-              placeholder="blur"
+              
               className="mt-10 xl:mt-0 rounded-2xl image__settings"
             />
           </div>
@@ -280,7 +280,7 @@ export default function Home() {
                 src="/testimonial__img.png"
                 id="testimonial__img_1"
                 className="rounded-2xl"
-                placeholder="blur"
+                
               />
             </div>
             <div className="flex items-center justify-between mt-5 xl:mt-3 bg-neutral-700 p-2">
@@ -314,7 +314,7 @@ export default function Home() {
               <Image
                 width={500}
                 height={250}
-                placeholder="blur"
+                
                 src="/testimonial__img_2.png"
                 id="testimonial__img_3"
                 className="rounded-2xl"
@@ -354,7 +354,7 @@ export default function Home() {
                 src="/testimonial__img_3.png"
                 id="testimonial__img_3"
                 className="rounded-2xl"
-                placeholder="blur"
+                
               />
             </div>
             <div className="flex items-center justify-between mt-5 xl:mt-3 bg-neutral-700 p-2">
@@ -555,7 +555,7 @@ export default function Home() {
           src="/footer__img_grid_1.png"
           className="footer__img_settings "
           id="footer__img_1"
-          placeholder="blur"
+          
           />
           <Image 
           width={300}
@@ -563,14 +563,14 @@ export default function Home() {
           src="/footer__img_2.jpg"
           className="footer__img_settings "
           id="footer__img_2"
-          placeholder="blur"
+          
           />
           <Image 
           width={300}
           height={300}
           src="/footer__img_grid_3.png"
           id="footer__img_3"
-          placeholder="blur"
+          
           />
         </div>
       </section>
