@@ -57,7 +57,7 @@ export default function Home() {
           content="/ffa__icon.png"
         />
       </Head>
-      <div className="svg__top_stripes overflow-x-hidden dark:bg-neutral-900">
+      {/* <div className="svg__top_stripes overflow-x-hidden dark:bg-neutral-900">
         <svg
         className="dark:opacity-80"
           width="100%"
@@ -79,7 +79,7 @@ export default function Home() {
             fill="#4CC9F0"
           />
         </svg>
-      </div>
+      </div> */}
 
       <header className="header__height flex items-center justify-center">
         <div className="flex-row xl:flex xl:flex-center xl:items-center xl:gap-20 z-10">
@@ -110,7 +110,7 @@ export default function Home() {
           </div>
           <div className="flex items-center justify-center xl:items-center">
             <Image
-              src="/../public/header__image_main.png"
+              src="/header__image_main.png"
               alt="unsplash test"
               width={600}
               height={600}
@@ -299,7 +299,7 @@ export default function Home() {
               <Image
                 width={500}
                 height={250}
-                src="/../public/testimonial__img.png"
+                src="/testimonial__img.png"
                 id="testimonial__img_1"
                 className="rounded-2xl"
               />
@@ -335,7 +335,7 @@ export default function Home() {
               <Image
                 width={500}
                 height={250}
-                src="/../public/testimonial__img_2.png"
+                src="/testimonial__img_2.png"
                 id="testimonial__img_3"
                 className="rounded-2xl"
               />
@@ -371,7 +371,7 @@ export default function Home() {
               <Image
                 width={500}
                 height={250}
-                src="/../public/testimonial__img_3.png"
+                src="/testimonial__img_3.png"
                 id="testimonial__img_3"
                 className="rounded-2xl"
               />
@@ -571,21 +571,21 @@ export default function Home() {
           <Image 
           width={300}
           height={300}
-          src="/../public/footer__img_grid_1.png"
+          src="/footer__img_grid_1.png"
           className="footer__img_settings "
           id="footer__img_1"
           />
           <Image 
           width={300}
           height={300}
-          src="/../public/footer__img_2.jpg"
+          src="/footer__img_2.jpg"
           className="footer__img_settings "
           id="footer__img_2"
           />
           <Image 
           width={300}
           height={300}
-          src="/../public/footer__img_grid_3.png"
+          src="/footer__img_grid_3.png"
           id="footer__img_3"
           />
         </div>

@@ -101,6 +101,7 @@ body{
 }
 .header__height {
     min-height: 80vh;
+    background-position: center;
 }
 .explore__prompt_height {
     min-height: 10vh;

@@ -5,7 +5,7 @@ const Signup = () => {
   return (
     <div>
     <Head>
-      <title>French For All | Sign Up</title>
+      <title>French For All | Booking</title>
       <link rel="shortcut icon" href="/ffa__icon.png"/>
       <meta
           property="og:description"

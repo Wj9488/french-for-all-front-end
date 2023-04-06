@@ -31,13 +31,13 @@ const Method = () => {
                 width={350}
                 height={350}
                 className="header__image_settings rounded-full"
-                src="/../public/footer__img_grid_1.png"
+                src="/footer__img_grid_1.png"
               />
               <Image
                 width={250}
                 height={250}
                 className="header__image_settings mt-20 rounded-full w-8/12"
-                src="/../public/footer__img_grid_3.png"
+                src="/footer__img_grid_3.png"
               />
             </div>
             <div className="flex-row xl:w-6/12 mb-20 xl:mb-0">
@@ -56,7 +56,7 @@ const Method = () => {
                 height={350}
                 className="footer__image_settings rounded-full"
                 id="header__img_1"
-                src="/../public/footer__img_2.jpg"
+                src="/footer__img_2.jpg"
               />
             </div>
           </div>
@@ -214,21 +214,21 @@ const Method = () => {
           <Image 
           width={300}
           height={300}
-          src="/../public/footer__img_grid_1.png"
+          src="/footer__img_grid_1.png"
           className="footer__img_settings "
           id="footer__img_1"
           />
           <Image 
           width={300}
           height={300}
-          src="/../public/footer__img_2.jpg"
+          src="/footer__img_2.jpg"
           className="footer__img_settings "
           id="footer__img_2"
           />
           <Image 
           width={300}
           height={300}
-          src="/../public/footer__img_grid_3.png"
+          src="/footer__img_grid_3.png"
           id="footer__img_3"
           />
         </div>
