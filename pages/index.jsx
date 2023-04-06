@@ -72,7 +72,7 @@ export default function Home() {
               goal faster.
             </p>
             <div className="flex items-center gap-5 justify-center xl:justify-start">
-              <Link href="/sign-up">
+              <Link href="/booking">
                 <button className="mt-3 xl:mt-5 font-medium text-white dark:text-black flex items-center gap-2 px-4 py-2 lg:py-2 bg-black dark:bg-white rounded-lg">
                   <div className="cta__pulse_active dark:bg-green-600"></div>
                   Help me improve
@@ -217,7 +217,7 @@ export default function Home() {
               Join the countless other students that I've helped and level up
               your French abilities.
             </p>
-            <Link href="/sign-up">
+            <Link href="/booking">
               <div className="flex items-center xl:justify-start justify-center">
                 <button className="mt-3 xl:mt-5 font-medium text-white dark:text-black flex items-center xl:justify-start gap-2 px-4 py-2 lg:py-2 bg-black dark:bg-white rounded-lg">
                   <div className="cta__pulse_active dark:bg-green-600"></div>
@@ -428,7 +428,7 @@ export default function Home() {
       </section>
 
       <div className="mb-20 flex items-center gap-5 justify-center xl:justify-start">
-        <Link href="/sign-up">
+        <Link href="/booking">
           <button className="mt-3 xl:mt-5 font-medium text-white dark:text-black flex items-center gap-2 px-4 py-2 lg:py-2 bg-black dark:bg-white rounded-lg">
             <div className="cta__pulse_active dark:bg-green-600"></div>
             Book a call
@@ -484,7 +484,7 @@ export default function Home() {
             <input
               type="hidden"
               name="_next"
-              value="localhost:3000/#contact-me"
+              value="https://frenchforall.netlify.app/#contact-me"
             />
             <input
               type="hidden"
@@ -539,7 +539,7 @@ export default function Home() {
           <h6 className="dark:text-white text-4xl xl:text-5xl text-center xl:text-left">
             Let's level up your French abilities
           </h6>
-          <Link href="/sign-up">
+          <Link href="/booking">
             <div className="flex items-center justify-center xl:justify-start xl:justfiy-left">
               <button className="mt-3 xl:mt-5 font-medium text-white dark:text-black flex items-center gap-2 px-4 py-2 lg:py-2 bg-black dark:bg-white rounded-lg">
                 <div className="cta__pulse_active dark:bg-green-600"></div>

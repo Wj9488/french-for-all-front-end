@@ -32,14 +32,14 @@ const About = () => {
                 height={350}
                 className="header__image_settings rounded-full"
                 src="/footer__img_grid_1.png"
-                placeholder="blur"
+                
               />
               <Image
                 width={250}
                 height={250}
                 className="header__image_settings mt-20 rounded-full w-8/12"
                 src="/footer__img_grid_3.png"
-                placeholder="blur"
+                
               />
             </div>
             <div className="flex-row xl:w-6/12 mb-20 xl:mb-0">
@@ -59,7 +59,7 @@ const About = () => {
                 className="footer__image_settings rounded-full"
                 id="header__img_1"
                 src="/footer__img_2.jpg"
-                placeholder="blur"
+                
               />
             </div>
           </div>
@@ -116,7 +116,7 @@ const About = () => {
           <h6 className="dark:text-white text-4xl xl:text-5xl text-center xl:text-left">
             Let's level up your French abilities
           </h6>
-          <Link href="/sign-up">
+          <Link href="/booking">
             <div className="flex items-center justify-center xl:justify-start xl:justfiy-left">
               <button className="mt-3 xl:mt-5 font-medium text-white dark:text-black flex items-center gap-2 px-4 py-2 lg:py-2 bg-black dark:bg-white rounded-lg">
                 <div className="cta__pulse_active dark:bg-green-600"></div>
@@ -132,7 +132,7 @@ const About = () => {
           src="/footer__img_grid_1.png"
           className="footer__img_settings "
           id="footer__img_1"
-          placeholder="blur"
+          
           />
           <Image 
           width={300}
@@ -140,14 +140,14 @@ const About = () => {
           src="/footer__img_2.jpg"
           className="footer__img_settings "
           id="footer__img_2"
-          placeholder="blur"
+          
           />
           <Image 
           width={300}
           height={300}
           src="/footer__img_grid_3.png"
           id="footer__img_3"
-          placeholder="blur"
+          
           />
         </div>
       </section>

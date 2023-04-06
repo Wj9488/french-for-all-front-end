@@ -77,7 +77,7 @@ const Navbar = () => {
           <Link href="/#contact-me">
             <li className="desktop__view_only dark:text-white">Contact</li>
           </Link>
-          <Link href="/sign-up">
+          <Link href="/booking">
             <div className="extra__small_none flex items-center gap-2 px-2 py-2 lg:py-2 dark:bg-white bg-black rounded-lg">
               <div className="cta__pulse_active dark:bg-green-600"></div>
               <li className="lg:text-base text-sm text-white dark:text-black">{ctaText}</li>
