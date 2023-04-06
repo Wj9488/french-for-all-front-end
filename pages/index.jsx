@@ -54,11 +54,12 @@ export default function Home() {
         />
         <meta
           property="og:image"
-          content="/ffa__icon.png"
+          content="/ffa__og_image.png"
         />
       </Head>
 
-      <header className="header__height flex items-center justify-center">
+      <header className="header__height flex items-center justify-center" >
+        <div id="header__bg_img" className="dark:opacity-50"></div>
         <div className="flex-row xl:flex xl:flex-center xl:items-center xl:gap-20 z-10">
           <div className="xl:w-7/12">
             <div className="font__quicksand font-semibold xl:text-5xl text-4xl xl:w-11/12">
@@ -73,7 +74,7 @@ export default function Home() {
             </p>
             <div className="flex items-center gap-5 justify-center xl:justify-start">
               <Link href="/booking">
-                <button className="mt-3 xl:mt-5 font-medium text-white dark:text-black flex items-center gap-2 px-4 py-2 lg:py-2 bg-black dark:bg-white rounded-lg">
+                <button className="hover:bg-neutral-200 mt-3 xl:mt-5 font-medium text-white dark:text-black flex items-center gap-2 px-4 py-2 lg:py-2 bg-black dark:bg-white rounded-lg">
                   <div className="cta__pulse_active dark:bg-green-600"></div>
                   Help me improve
                 </button>
@@ -429,7 +430,7 @@ export default function Home() {
 
       <div className="mb-20 flex items-center gap-5 justify-center xl:justify-start">
         <Link href="/booking">
-          <button className="mt-3 xl:mt-5 font-medium text-white dark:text-black flex items-center gap-2 px-4 py-2 lg:py-2 bg-black dark:bg-white rounded-lg">
+          <button className="hover:bg-neutral-200 mt-3 xl:mt-5 font-medium text-white dark:text-black flex items-center gap-2 px-4 py-2 lg:py-2 bg-black dark:bg-white rounded-lg">
             <div className="cta__pulse_active dark:bg-green-600"></div>
             Book a call
           </button>
@@ -541,7 +542,7 @@ export default function Home() {
           </h6>
           <Link href="/booking">
             <div className="flex items-center justify-center xl:justify-start xl:justfiy-left">
-              <button className="mt-3 xl:mt-5 font-medium text-white dark:text-black flex items-center gap-2 px-4 py-2 lg:py-2 bg-black dark:bg-white rounded-lg">
+              <button className="hover:bg-neutral-200 mt-3 xl:mt-5 font-medium text-white dark:text-black flex items-center gap-2 px-4 py-2 lg:py-2 bg-black dark:bg-white rounded-lg">
                 <div className="cta__pulse_active dark:bg-green-600"></div>
                 Get started
               </button>

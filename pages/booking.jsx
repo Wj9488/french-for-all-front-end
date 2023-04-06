@@ -19,7 +19,7 @@ const Signup = () => {
         />
         <meta
           property="og:image"
-          content="/ffa__icon.png"
+          content="/ffa__og_image.png"
         />
     </Head>
     <div className="ml-auto mr-auto app__width">
