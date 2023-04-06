@@ -32,14 +32,17 @@ const Method = () => {
                 height={350}
                 className="header__image_settings rounded-full"
                 src="/footer__img_grid_1.png"
+                placeholder="blur"
               />
               <Image
+                placeholder="blur"
                 width={250}
                 height={250}
                 className="header__image_settings mt-20 rounded-full w-8/12"
                 src="/footer__img_grid_3.png"
               />
             </div>
+            placeholder="blur"
             <div className="flex-row xl:w-6/12 mb-20 xl:mb-0">
               <h1 className="font__quicksand xl:text-5xl text-4xl text-center font-semibold dark:text-neutral-200">
                 My teaching method
@@ -59,6 +62,7 @@ const Method = () => {
                 src="/footer__img_2.jpg"
               />
             </div>
+            placeholder="blur"
           </div>
         </section>
 
@@ -217,6 +221,7 @@ const Method = () => {
           src="/footer__img_grid_1.png"
           className="footer__img_settings "
           id="footer__img_1"
+          placeholder="blur"
           />
           <Image 
           width={300}
@@ -224,6 +229,7 @@ const Method = () => {
           src="/footer__img_2.jpg"
           className="footer__img_settings "
           id="footer__img_2"
+          placeholder="blur"
           />
           <Image 
           width={300}
@@ -231,6 +237,7 @@ const Method = () => {
           src="/footer__img_grid_3.png"
           id="footer__img_3"
           />
+          placeholder="blur"
         </div>
       </section>
       </div>

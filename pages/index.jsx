@@ -57,29 +57,6 @@ export default function Home() {
           content="/ffa__icon.png"
         />
       </Head>
-      {/* <div className="svg__top_stripes overflow-x-hidden dark:bg-neutral-900">
-        <svg
-        className="dark:opacity-80"
-          width="100%"
-          height="193"
-          viewBox="0 0 1983 193"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1357.3 183.082C1583.24 204.819 1962.68 184.21 1982.21 183.126C1982.74 183.096 1983 182.667 1983 182.137V3C1983 2.44771 1982.55 2 1982 2L8.76807 2C7.61731 2 7.3606 3.59 8.46509 3.91325C48.7345 15.6994 269.623 78.4374 458.715 93.5359C626.824 106.959 737.029 80.1294 905.153 93.5359C1111.24 109.97 1154.43 163.564 1357.3 183.082Z"
-            fill="#FFF698"
-          />
-          <path
-            d="M1356.62 135.678C1582.35 151.718 1961.37 136.524 1981.19 135.712C1981.73 135.69 1982 135.255 1982 134.719V3C1982 2.44771 1981.55 2 1981 2L11.0736 2C9.87915 2 9.54102 3.64574 10.7089 3.89674C56.3312 13.7032 272.754 58.6202 458.484 69.5736C626.509 79.4828 736.657 59.6767 904.698 69.5736C1110.68 81.7052 1153.85 121.27 1356.62 135.678Z"
-            fill="#CAFFBF"
-          />
-          <path
-            d="M1352.56 83.4304C1580.07 93.4387 1962.02 83.9625 1982.17 83.4516C1982.71 83.4379 1983 82.9982 1983 82.456V0.999992C1983 0.447708 1982.55 -7.62939e-06 1982 -7.62939e-06L1.54651 -7.62939e-06C0.301758 -7.62939e-06 0.0319824 1.74725 1.26624 1.90956C57.0891 9.25117 266.531 35.578 447.173 42.1736C616.555 48.358 727.594 35.9968 896.992 42.1736C1104.64 49.7451 1148.15 74.4379 1352.56 83.4304Z"
-            fill="#4CC9F0"
-          />
-        </svg>
-      </div> */}
 
       <header className="header__height flex items-center justify-center">
         <div className="flex-row xl:flex xl:flex-center xl:items-center xl:gap-20 z-10">
@@ -114,6 +91,7 @@ export default function Home() {
               alt="unsplash test"
               width={600}
               height={600}
+              placeholder="blur"
               className="mt-10 xl:mt-0 rounded-2xl image__settings"
             />
           </div>
@@ -302,6 +280,7 @@ export default function Home() {
                 src="/testimonial__img.png"
                 id="testimonial__img_1"
                 className="rounded-2xl"
+                placeholder="blur"
               />
             </div>
             <div className="flex items-center justify-between mt-5 xl:mt-3 bg-neutral-700 p-2">
@@ -335,6 +314,7 @@ export default function Home() {
               <Image
                 width={500}
                 height={250}
+                placeholder="blur"
                 src="/testimonial__img_2.png"
                 id="testimonial__img_3"
                 className="rounded-2xl"
@@ -374,6 +354,7 @@ export default function Home() {
                 src="/testimonial__img_3.png"
                 id="testimonial__img_3"
                 className="rounded-2xl"
+                placeholder="blur"
               />
             </div>
             <div className="flex items-center justify-between mt-5 xl:mt-3 bg-neutral-700 p-2">
@@ -574,6 +555,7 @@ export default function Home() {
           src="/footer__img_grid_1.png"
           className="footer__img_settings "
           id="footer__img_1"
+          placeholder="blur"
           />
           <Image 
           width={300}
@@ -581,12 +563,14 @@ export default function Home() {
           src="/footer__img_2.jpg"
           className="footer__img_settings "
           id="footer__img_2"
+          placeholder="blur"
           />
           <Image 
           width={300}
           height={300}
           src="/footer__img_grid_3.png"
           id="footer__img_3"
+          placeholder="blur"
           />
         </div>
       </section>
