@@ -68,7 +68,7 @@ const Reviews = () => {
 
       <section className="mt-20 mb-20 flex-row xl:flex justify-between items-center font-semibold">
         <div>
-          <h6 className="dark:text-white text-4xl xl:text-5xl text-center xl:text-left">
+          <h6 className="dark:text-white text-4xl xl:text-5xl text-center xl:text-left xl:w-10/12">
             Let's level up your French abilities
           </h6>
           <Link href="/booking">
@@ -82,24 +82,24 @@ const Reviews = () => {
         </div>
         <div className="footer__img_grid gap-5 mt-20 xl:mt-0">
           <Image 
-          width={300}
-          height={300}
+          width={250}
+          height={250}
           src="/../public/footer__img_grid_1.png"
           className="footer__img_settings "
           id="footer__img_1"
           
           />
           <Image 
-          width={300}
-          height={300}
+          width={250}
+          height={250}
           src="/../public/footer__img_2.jpg"
           className="footer__img_settings "
           id="footer__img_2"
           
           />
           <Image 
-          width={300}
-          height={300}
+          width={250}
+          height={250}
           src="/../public/footer__img_grid_3.png"
           id="footer__img_3"
           

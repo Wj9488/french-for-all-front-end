@@ -14,7 +14,6 @@ body{
 }
 
 /* App theme colours */
-
 .bg__app_green {
     background: #CAFFBF;
 }
@@ -85,10 +84,11 @@ body{
 
 /* Height setters */
 
-
+.section__height {
+    min-height: 80vh;
+}
 .header__height {
     min-height: 80vh;
-    background-position: center;
 }
 #header__bg_img {
     overflow-x: hidden;
@@ -216,6 +216,8 @@ body{
         width: 200px;
         height: 600px;
         filter: blur(150px);
+        top: 0;
+        left: 0;
     }
     .mobile__display_only {
         display: block;

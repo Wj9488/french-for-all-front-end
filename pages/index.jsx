@@ -74,7 +74,7 @@ export default function Home() {
             </p>
             <div className="flex items-center gap-5 justify-center xl:justify-start">
               <Link href="/booking">
-                <button className="hover:bg-neutral-200 mt-3 xl:mt-5 font-medium text-white dark:text-black flex items-center gap-2 px-4 py-2 lg:py-2 bg-black dark:bg-white rounded-lg">
+                <button className="mt-3 xl:mt-5 font-medium text-white dark:text-black flex items-center gap-2 px-4 py-2 lg:py-2 bg-black dark:bg-white rounded-lg">
                   <div className="cta__pulse_active dark:bg-green-600"></div>
                   Help me improve
                 </button>
@@ -89,7 +89,7 @@ export default function Home() {
           <div className="flex items-center justify-center xl:items-center">
             <Image
               src="/header__image_main.png"
-              alt="unsplash test"
+              alt="Valerie Jones - Tutor"
               width={600}
               height={600}
               
@@ -315,7 +315,6 @@ export default function Home() {
               <Image
                 width={500}
                 height={250}
-                
                 src="/testimonial__img_2.png"
                 id="testimonial__img_3"
                 className="rounded-2xl"
@@ -430,7 +429,7 @@ export default function Home() {
 
       <div className="mb-20 flex items-center gap-5 justify-center xl:justify-start">
         <Link href="/booking">
-          <button className="hover:bg-neutral-200 mt-3 xl:mt-5 font-medium text-white dark:text-black flex items-center gap-2 px-4 py-2 lg:py-2 bg-black dark:bg-white rounded-lg">
+          <button className="mt-3 xl:mt-5 font-medium text-white dark:text-black flex items-center gap-2 px-4 py-2 lg:py-2 bg-black dark:bg-white rounded-lg">
             <div className="cta__pulse_active dark:bg-green-600"></div>
             Book a call
           </button>
@@ -500,7 +499,7 @@ export default function Home() {
                   placeholder="Your name..."
                   name="name"
                   required
-                  className="p-4 bg-neutral-100 dark:bg-neutral-800 rounded-2xl w-full mb-5"
+                  className="p-4 dark:text-neutral-200 bg-neutral-100 dark:bg-neutral-800 rounded-2xl w-full mb-5"
                 />
               </div>
               <div className="w-6/12">
@@ -510,7 +509,7 @@ export default function Home() {
                   placeholder="email@example.com"
                   name="email"
                   required
-                  className="p-4 bg-neutral-100 dark:bg-neutral-800 rounded-2xl w-full mb-5"
+                  className="p-4 dark:text-neutral-200 bg-neutral-100 dark:bg-neutral-800 rounded-2xl w-full mb-5"
                 />
               </div>
             </div>
@@ -523,7 +522,7 @@ export default function Home() {
                 rows="4"
                 placeholder="Your message..."
                 required
-                className="p-4 bg-neutral-100 dark:bg-neutral-800 rounded-2xl w-full"
+                className="p-4 dark:text-neutral-200 bg-neutral-100 dark:bg-neutral-800 rounded-2xl w-full"
               ></textarea>
             </div>
             <div className="flex items-center justify-center xl:justify-start">
@@ -537,12 +536,12 @@ export default function Home() {
 
       <section className="mt-20 mb-20 flex-row xl:flex justify-between items-center font-semibold">
         <div>
-          <h6 className="dark:text-white text-4xl xl:text-5xl text-center xl:text-left">
+          <h6 className="dark:text-white text-4xl xl:text-5xl text-center xl:text-left xl:w-10/12">
             Let's level up your French abilities
           </h6>
           <Link href="/booking">
             <div className="flex items-center justify-center xl:justify-start xl:justfiy-left">
-              <button className="hover:bg-neutral-200 mt-3 xl:mt-5 font-medium text-white dark:text-black flex items-center gap-2 px-4 py-2 lg:py-2 bg-black dark:bg-white rounded-lg">
+              <button className="mt-3 xl:mt-5 font-medium text-white dark:text-black flex items-center gap-2 px-4 py-2 lg:py-2 bg-black dark:bg-white rounded-lg">
                 <div className="cta__pulse_active dark:bg-green-600"></div>
                 Get started
               </button>
@@ -551,24 +550,24 @@ export default function Home() {
         </div>
         <div className="footer__img_grid gap-5 mt-20 xl:mt-0">
           <Image 
-          width={300}
-          height={300}
+          width={250}
+          height={250}
           src="/footer__img_grid_1.png"
           className="footer__img_settings "
           id="footer__img_1"
           
           />
           <Image 
-          width={300}
-          height={300}
+          width={250}
+          height={250}
           src="/footer__img_2.jpg"
           className="footer__img_settings "
           id="footer__img_2"
           
           />
           <Image 
-          width={300}
-          height={300}
+          width={250}
+          height={250}
           src="/footer__img_grid_3.png"
           id="footer__img_3"
           

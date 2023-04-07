@@ -55,8 +55,8 @@ const Method = () => {
 
             <div className="flex items-center justify-center xl:justify-start xl:items-start">
               <Image
-                width={350}
-                height={350}
+                width={250}
+                height={250}
                 className="footer__image_settings rounded-full"
                 id="header__img_1"
                 src="/footer__img_2.jpg"
@@ -202,8 +202,8 @@ const Method = () => {
 
         <section className="mt-20 mb-20 flex-row xl:flex justify-between items-center font-semibold">
         <div>
-          <h6 className="dark:text-white text-4xl xl:text-5xl text-center xl:text-left">
-            Let's level up your French abilities
+          <h6 className="dark:text-white text-4xl xl:text-5xl text-center xl:text-left xl:w-10/12">
+            Let's level up your French abilities 
           </h6>
           <Link href="/booking">
             <div className="flex items-center justify-center xl:justify-start xl:justfiy-left">
