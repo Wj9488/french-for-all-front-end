@@ -38,7 +38,7 @@ const About = () => {
                 width={250}
                 height={250}
                 className="header__image_settings rounded-full"
-                src="/img__french_cafe.jpg"
+                src="/img__eiffel_tower.jpg"
                 
               />
               <Image
@@ -46,7 +46,7 @@ const About = () => {
                 width={200}
                 height={200}
                 className="header__image_settings mt-20 rounded-full w-8/12"
-                src="/img__french_cafe_2.jpg"
+                src="/img__french_cafe.jpg"
               />
             </div>
             
@@ -65,7 +65,7 @@ const About = () => {
                 height={225}
                 className="rounded-full"
                 id="header__img_1"
-                src="/img__eiffel_tower.jpg"
+                src="/img__french_cafe_2.jpg"
               />
             </div>
             
