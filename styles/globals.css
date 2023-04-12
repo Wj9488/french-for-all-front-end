@@ -160,18 +160,21 @@ body{
 }
 #footer__img_1 {
     grid-area: tower;
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    transform: rotate(0deg) !important;
 }
 #footer__img_2 {
     grid-area: cafe;
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    transform: rotate(0deg) !important;
 }
 #footer__img_3 {
     grid-area: flag;
-    border-radius: 60%;
+    /* border-radius: 60%; */
     width: 150px;
     height: 150px;
-    margin-left: 40%;
+    /* margin-left: 40%; */
+    transform: rotate(0deg) !important;
 }
 .footer__img_settings{
     width: 100%;
