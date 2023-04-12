@@ -16,45 +16,54 @@ export default function Home() {
 
   const faqData = [
     {
-      question: "What are your prices?",
+      question: "Can I do less or more than an hour?",
       answer:
-        "FAQ sections of websites are crucial to converting more of your traffic. Addressing the most commonly asked questions that your customers normally have allows them to more clearly understand whether or not your service or product is right for them.",
+        "Yes of course, you can choose to do a shorter 45 minute session for £19 or a longer hour and a quarter session for £31.",
+    },
+    // {
+    //   question: "?",
+    //   answer:
+    //     "While I prefer to stick to the pay as you go system that I work on, I would be happy to consider this on a case by case basis. Book your free call so we can discuss this further.",
+    // },
+    {
+      question: "How many lessons will I need?",
+      answer:
+        "It is possible to cover a lot in a 1:1 session so I usually recommend one lesson a week. You can book more lessons if you have a specific deadline that you're working towards",
     },
     {
-      question: "How many hours do your lessons last for?",
+      question: "I have not enjoyed learning French in the past. I'm worried I won't enjoy 1:1 tuition.",
       answer:
-        "The best thing to do to start populating a good FAQ section is by making a note of the most common questions that your customers ask over say, a month. Or you could ask your staff what they most commonly get asked.",
-    },
-    {
-      question: "Is there a free lesson so I can try before committing fully?",
-      answer:
-        "Fun fact: FAQ sections have been shown to increase trust in users.",
-    },
-    {
-      question: "How should I use FAQ sections?",
-      answer:
-        "Customers are highly likely to have questions about your product or service, this section is your change to handle these objections. Imagine it as your 24/7 sales assistant.",
+        "A lot of people who come to me have had unsuccessful previous experiences learning French. It is my job to make the lessons enjoyable for you and to help you properly. Read some of my reviews to see what previous students have said.",
     },
   ];
 
   return ( 
     <div className="overflow-x-hidden ml-auto mr-auto app__width">
       <Head>
-        <title>French For All | Home</title>
+        <title>Online French Lessons - Friendly & experienced native speaker | French For All</title>
         <link rel="shortcut icon" href="/ffa__icon.png"/>
+        <meta charSet="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta property="og:locale" content="en_GB"/>
+        <meta property="og:type" content="website"/>
         <meta
           property="og:description"
-          content="Get help from a professional native speaker with 1 to 1 lessons tailored to you.
-          I'm dedicated to helping you improve your French abilities."
+          content="Get help from a professional native speaker with lessons personalised to you.
+          Learn French online from the comfort of your home."
         />
         <meta
           name="description"
-          content="Get help from a local professional native speaker with 1 to 1 lessons tailored to you.
-          I'm dedicated to helping you improve your French abilities."
+          content="Get help from a local professional native speaker with 
+          lessons personalised to you. Learn French online from the comfort of your home."
         />
         <meta
           property="og:image"
           content="/ffa__og_image.png"
+        />
+        <meta 
+         name="keywords"
+         content="french lessons, online french lessons, french lessons near me, french lessons london, french lessons sussex, 
+         french lesson, french online lessons, french classes near me, learn french online, french for all"
         />
       </Head>
 
@@ -63,14 +72,13 @@ export default function Home() {
         <div className="flex-row xl:flex xl:flex-center xl:items-center xl:gap-20 z-10">
           <div className="xl:w-7/12">
             <div className="font__quicksand font-semibold xl:text-5xl text-4xl xl:w-11/12">
-              <p className="dark:text-neutral-200 text-5xl lg:text-6xl xl:text-7xl text-center xl:text-left">
-                I'll unlock your French potential with expert 1 to 1 teaching
+              <p className="dark:text-neutral-200 text-5xl lg:text-6xl text-center xl:text-left">
+              French language tuition with a native speaker - personalised lessons for all levels
               </p>
             </div>
             <p className="dark:text-neutral-200 mt-5 text-xl text-center xl:text-left">
-              I'll use my expertise as a native speaker with tried and tested
-              methods to help you navigate the French language and reach your
-              goal faster.
+              With 25 years of teaching experience, I've helped hundreds of people gain confidence 
+              to learn French. 
             </p>
             <div className="flex items-center gap-5 justify-center xl:justify-start">
               <Link href="/booking">
@@ -130,20 +138,20 @@ export default function Home() {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <rect width="28" height="27" rx="5" fill="#CAFFBF" />
+              <rect width="28" height="27" rx="5" fill="#0050a4 " />
               <path
                 d="M4 15.5L8.73684 21L16.1053 10.5L19.7895 13.5L24 8"
-                stroke="black"
+                stroke="white"
                 stroke-width="1.3"
               />
             </svg>
             <h2 className="font__quicksand text-2xl font-semibold dark:text-neutral-200">
-              Continued support
+              Friendly support
             </h2>
           </div>
           <p className="mt-3 dark:text-neutral-200">
-            This is the first benefit that your customers will experience when
-            they purchase your service or product.
+            Learning a language can be daunting and I will 
+            be there to help you every step of the way.
           </p>
         </div>
 
@@ -156,11 +164,11 @@ export default function Home() {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <rect width="28" height="27" rx="5" fill="#FFF698" />
-              <ellipse cx="14" cy="9" rx="5" ry="6" fill="black" />
+              <rect width="28" height="27" rx="5" className="dark:fill-neutral-900 fill-neutral-50"/>
+              <ellipse cx="14" cy="9" rx="5" ry="6" className="dark:fill-white fill-black" />
               <path
                 d="M21.1506 15.8182C17.8587 14.7273 10.7278 14.7273 6.8879 15.8182C3.04795 16.9091 4.14507 24 4.14507 24H23.8934C23.8934 24 24.8301 17.0375 21.1506 15.8182Z"
-                fill="black"
+                className="dark:fill-white fill-black"
               />
               <ellipse
                 cx="1"
@@ -168,7 +176,7 @@ export default function Home() {
                 rx="1"
                 ry="3.5"
                 transform="matrix(-1 0 0 1 15 15)"
-                fill="white"
+                className="fill-white dark:fill-black"
               />
             </svg>
             <h2 className="font__quicksand text-2xl font-semibold dark:text-neutral-200">
@@ -176,9 +184,9 @@ export default function Home() {
             </h2>
           </div>
           <p className="mt-3 dark:text-neutral-200">
-            Make sure to appeal to what you know your target market wants
-            solved. You want to evoke emotion in the user and make them realise
-            that you have the solution to their problem.
+            I understand the struggles of learning French and where most 
+            people go wrong. I'll keep you on the right track and make sure you 
+            progress properly at your own pace.
           </p>
         </div>
 
@@ -191,18 +199,18 @@ export default function Home() {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <circle cx="14" cy="14" r="14" fill="#4CC9F0" />
-              <circle cx="14" cy="14" r="11" className="dark:fill-neutral-900 fill-neutral-50" />
-              <circle cx="14" cy="14" r="8" fill="#4CC9F0" />
-              <circle cx="14" cy="14" r="3" className="dark:fill-neutral-900 fill-neutral-50" />
+              <circle cx="14" cy="14" r="14" fill="#ef4135 " />
+              <circle cx="14" cy="14" r="11" className="fill-neutral-50" />
+              <circle cx="14" cy="14" r="8" fill="#ef4135 " />
+              <circle cx="14" cy="14" r="3" className="fill-neutral-50" />
             </svg>
             <h2 className="font__quicksand text-2xl font-semibold dark:text-neutral-200">
-              Results focused
+              Personalised support
             </h2>
           </div>
           <p className="mt-3 dark:text-neutral-200">
-            Boast about what your company can do for the client and why they
-            should choose you over another business in the same field.
+            Each lesson is tailored specifically for you and is designed to 
+            give you the tools to enable you to speak and write well.
           </p>
         </div>
       </section>
@@ -211,12 +219,12 @@ export default function Home() {
         <div className="mt-20 mb-20  flex-row xl:flex items-center justify-center xl:justify-between">
           <div className="xl:w-4/12">
             <h3 className="text-4xl xl:text-5xl font-semibold dark:text-neutral-200">
-              What can you expect from my lessons?
+              About my lessons
             </h3>
             <div className="about__divider_line bg-black dark:bg-white mt-4 mb-2"></div>
             <p className="text-xl dark:text-neutral-200">
-              Join the countless other students that I've helped and level up
-              your French abilities.
+              Join the countless other students that I've helped and improve
+              your French.
             </p>
             <Link href="/booking">
               <div className="flex items-center xl:justify-start justify-center">
@@ -230,31 +238,20 @@ export default function Home() {
           <div className="xl:w-7/12 xl:gap-5 flex-row xl:flex xl:justify-around items-start justify-center mt-5 xl:mt-0">
             <div>
               <p className="rounded-xl border border-black p-4 xl:p-2 dark:text-neutral-200 dark:border-neutral-200">
-                &#10003; A friendly, welcoming and supportive method to learn
-                French.
+                &#10003; A friendly and supportive way of learning French.
               </p>
               <p className="rounded-xl border border-black mt-5 xl:mt-2 p-4 xl:p-2 dark:text-neutral-200 dark:border-neutral-200">
-                &#10003; A completely tailored-to you experience.
+                &#10003; Competitive pricing.
               </p>
               <p className="rounded-xl border border-black mt-5 xl:mt-2 p-4 xl:p-2 dark:text-neutral-200 dark:border-neutral-200">
-                &#10003; Exercises in both speaking and written French designed
-                specifically to help you consistently improve.
+                &#10003; Flexible, if you need to cancel we'll
+                try to reschedule.
               </p>
               <p className="rounded-xl border border-black mt-5 xl:mt-2 p-4 xl:p-2 dark:text-neutral-200 dark:border-neutral-200">
-                &#10003; Flexible to your schedule, if you need to cancel we'll
-                be able to reschedule easily.
-              </p>
-            </div>
-            <div>
-              <p className="rounded-xl border border-black p-4 xl:p-2 mt-5 xl:mt-0 dark:text-neutral-200 dark:border-neutral-200">
-                &#10003; No minimum booking.
+                &#10003; Pay as you go pricing with no minimum booking.
               </p>
               <p className="rounded-xl border border-black mt-5 xl:mt-2 p-4 xl:p-2 dark:text-neutral-200 dark:border-neutral-200">
-                &#10003; No upfront payments.
-              </p>
-              <p className="rounded-xl border border-black mt-5 xl:mt-2 p-4 xl:p-2 dark:text-neutral-200 dark:border-neutral-200">
-                &#10003; Pay as you go pricing, you'll only pay for the lessons
-                that you actually take.
+                &#10003; Available online over Skype or Zoom.
               </p>
             </div>
           </div>
@@ -262,27 +259,20 @@ export default function Home() {
       </section>
 
       <section className="mb-20 mt-20 landing__gradient dark:opacity-80 rounded-2xl p-4 xl:p-6">
-        <h4 className="text-4xl xl:text-5xl font-semibold xl:text-left text-center">
+        <h4 className="text-4xl text-white xl:text-5xl font-semibold xl:text-left text-center">
           A few success stories
         </h4>
-        <div className="flex-row xl:flex items-center justify-center gap-5 xl:justify-around mt-5 mb-5">
+        <div className="flex-row xl:flex flex-1 items-center justify-center gap-5 xl:justify-around mt-5 mb-5">
         <Link href="/reviews">
-          <div className="bg-neutral-700 min-h-[30vh] rounded-2xl p-2 mt-5 xl-mt-0">
-            <p className="bg-white p-2 rounded-2xl w-4/12 text-center text-sm">
-              Jane Adams
+          <div className="bg-neutral-700 xl:min-h-[50vh] rounded-2xl p-2 mt-5 xl-mt-0">
+            <p className="bg-white p-2 rounded-2xl w-5/12 text-center text-sm">
+              Victoria Redman
             </p>
             <p className="text-white text-3xl xl:text-4xl mt-5 mb-5">
-              "These lessons made me progress so fast"
+              "Without your help I would have never been able 
+              to achieve the grade."
             </p>
             <div>
-              <Image
-                width={500}
-                height={250}
-                src="/testimonial__img.png"
-                id="testimonial__img_1"
-                className="rounded-2xl"
-                
-              />
             </div>
             <div className="flex items-center justify-between mt-5 xl:mt-3 bg-neutral-700 p-2">
               <p className="text-white">Read testimonial</p>
@@ -304,21 +294,15 @@ export default function Home() {
         </Link>
 
         <Link href="/reviews">
-          <div className="bg-neutral-700 min-h-[30vh] rounded-2xl p-2 mt-5 xl-mt-0">
+          <div className="bg-neutral-700 xl:min-h-[50vh] rounded-2xl p-2 mt-5 xl-mt-0">
             <p className="bg-white p-2 rounded-2xl w-4/12 text-center text-sm">
-              Sarah Smith
+              Rachel Wilkey
             </p>
             <p className="text-white text-3xl xl:text-4xl mt-5 mb-5">
-              "I'm now able to get by just fine in France"
+              "I now can speak French more fluently and I'm more able to 
+              understand somebody speaking in French."
             </p>
             <div>
-              <Image
-                width={500}
-                height={250}
-                src="/testimonial__img_2.png"
-                id="testimonial__img_3"
-                className="rounded-2xl"
-              />
             </div>
             <div className="flex items-center justify-between mt-5 xl:mt-3 bg-neutral-700 p-2">
               <p className="text-white">Read testimonial</p>
@@ -340,22 +324,15 @@ export default function Home() {
         </Link>
 
         <Link href="/reviews">
-          <div className="bg-neutral-700 min-h-[30vh] rounded-2xl p-2 mt-5 xl-mt-0">
+          <div className="bg-neutral-700 xl:min-h-[50vh] rounded-2xl p-2 mt-5 xl-mt-0">
             <p className="bg-white p-2 rounded-2xl w-4/12 text-center text-sm">
-              Helen Brown
+              Allison Hood
             </p>
             <p className="text-white text-3xl xl:text-4xl mt-5 mb-5">
-              "I always look forward to Valérie's lessons"
+              "Being left with only my teachers probably would have 
+              resulted in me dropping French altogether."
             </p>
             <div>
-              <Image
-                width={500}
-                height={250}
-                src="/testimonial__img_3.png"
-                id="testimonial__img_3"
-                className="rounded-2xl"
-                
-              />
             </div>
             <div className="flex items-center justify-between mt-5 xl:mt-3 bg-neutral-700 p-2">
               <p className="text-white">Read testimonial</p>
@@ -386,7 +363,7 @@ export default function Home() {
       <section className="flex-row xl:flex items-start justify-between gap-5">
         <div className="text-center xl:text-left xl:w-4/12 dark:opacity-80 pricing__border_box landing__gradient mt-3 xl:mt-0 p-5 rounded-xl flex justify-start items-center xl:justify-center">
           <p className="font-light font__quicksand large__text">
-            £25 <span className="text-xl text-neutral-400">/ hour</span>
+            £25 <span className="text-xl">/ hour</span>
           </p>
         </div>
         <div className="pricing__border_box dark:border-neutral-200 mt-5 xl:mt-0 p-5 rounded-xl xl:w-4/12">
@@ -395,7 +372,7 @@ export default function Home() {
           </p>
           <p className="mt-4 dark:text-neutral-200">
             <span className="font-extrabold dark:text-neutral-200">&#10003; </span>
-            Timing that is suited to you
+            Flexible timing
             <br />
             <br />
             <span className="font-extrabold dark:text-neutral-200">&#10003; </span>
@@ -403,20 +380,16 @@ export default function Home() {
             <br />
             <br />
             <span className="font-extrabold dark:text-neutral-200">&#10003; </span>
-            Expert 1 to 1 teaching
+            Expert 1:1 teaching
             <br />
             <br />
             <span className="font-extrabold dark:text-neutral-200">&#10003; </span>
-            In person or zoom
-            <br />
-            <br />
-            <span className="font-extrabold dark:text-neutral-200">&#10003; </span>
-            Beginner friendly
+            All levels welcome
           </p>
         </div>
         <div className="mt-5 xl:mt-0 xl:w-4/12 text-center xl:text-left dark:opacity-80">
           <p className="rounded-xl p-4 xl:p-2 dark:text-neutral-200">
-            &#10003; You choose how your lessons are delivered
+            &#10003; Pay as you go
           </p>
           <p className="rounded-xl mt-2 p-4 xl:p-2 dark:text-neutral-200">
             &#10003; Available over {" "} 
@@ -484,7 +457,7 @@ export default function Home() {
             <input
               type="hidden"
               name="_next"
-              value="https://frenchforall.netlify.app/#contact-me"
+              value="https://frenchforall.netlify.app/message-send-success"
             />
             <input
               type="hidden"
@@ -514,13 +487,13 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <p className="mb-2 dark:text-neutral-200">Your message <sup>*</sup></p>
+              <p className="mb-2 dark:text-neutral-200">Your question <sup>*</sup></p>
               <textarea
                 name=""
                 id=""
                 cols="30"
                 rows="4"
-                placeholder="Your message..."
+                placeholder="Your question..."
                 required
                 className="p-4 dark:text-neutral-200 bg-neutral-100 dark:bg-neutral-800 rounded-2xl w-full"
               ></textarea>
@@ -537,7 +510,7 @@ export default function Home() {
       <section className="mt-20 mb-20 flex-row xl:flex justify-between items-center font-semibold">
         <div>
           <h6 className="dark:text-white text-4xl xl:text-5xl text-center xl:text-left xl:w-10/12">
-            Let's level up your French abilities
+            Get the support you need.
           </h6>
           <Link href="/booking">
             <div className="flex items-center justify-center xl:justify-start xl:justfiy-left">
@@ -552,15 +525,15 @@ export default function Home() {
           <Image 
           width={250}
           height={250}
-          src="/footer__img_grid_1.png"
-          className="footer__img_settings "
+          src="/img__french_cafe.jpg"
+          className="footer__img_settings"
           id="footer__img_1"
           
           />
           <Image 
           width={250}
           height={250}
-          src="/footer__img_2.jpg"
+          src="/img__eiffel_tower.jpg"
           className="footer__img_settings "
           id="footer__img_2"
           
@@ -568,7 +541,7 @@ export default function Home() {
           <Image 
           width={250}
           height={250}
-          src="/footer__img_grid_3.png"
+          src="/img__french_cafe_2.jpg"
           id="footer__img_3"
           
           />

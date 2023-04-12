@@ -4,31 +4,38 @@ import { InlineWidget } from "react-calendly";
 const Signup = () => {
   return (
     <div>
-    <Head>
-      <title>French For All | Booking</title>
-      <link rel="shortcut icon" href="/ffa__icon.png"/>
-      <meta
+      <Head>
+        <title>Book your free call - Friendly & experienced native speaker | French For All</title>
+        <link rel="shortcut icon" href="/ffa__icon.png"/>
+        <meta charSet="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta property="og:locale" content="en_GB"/>
+        <meta property="og:type" content="website"/>
+        <meta
           property="og:description"
-          content="Get help from a professional native speaker with 1 to 1 lessons tailored to you.
-          Book a free call with me so we can establish what you're looking for."
+          content="Book your free no-commitment call with me."
         />
         <meta
           name="description"
-          content="Get help from a local professional native speaker with 1 to 1 lessons tailored to you.
-          Book a free call with me so we can establish what you're looking for."
+          content="Book your free no-commitment call with me."
         />
         <meta
           property="og:image"
           content="/ffa__og_image.png"
         />
-    </Head>
+        <meta 
+         name="keywords"
+         content="french lessons, online french lessons, french lessons near me, french lessons london, french lessons sussex, 
+         french lesson, french online lessons, french classes near me, learn french online, french for all"
+        />
+      </Head>
     <div className="ml-auto mr-auto app__width">
 
         <h1 className="mt-20 mb-20 dark:text-neutral-200 font__quicksand font-semibold text-4xl xl:text-5xl text-center">
           So, when are you free?
         </h1>
-        <div className="mt-20 mb-20">
-            <InlineWidget url="https://calendly.com/frenchforall/free-consultation"/>
+        <div className="mb-20">
+            <InlineWidget url="https://calendly.com/frenchforall/introductory-phone-call"/>
         </div>  
       </div>
     </div>

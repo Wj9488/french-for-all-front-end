@@ -10,15 +10,24 @@ html {
 }
 
 body{
-    background-image: linear-gradient(135deg, #4CC9F0, #CAFFBF, rgb(255, 246, 152))
+    background: #fafafa;
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+      background: #171717;
+    }
+  }
+
 /* App theme colours */
-.bg__app_green {
-    background: #CAFFBF;
+.bg__ff_blue {
+    background: #0050a4; 
+}
+.bg__ff_red {
+    background: #ef4135;
 }
 .col__app_green {
-    color: #CAFFBF;
+    color: #ef4135;
 }
 .bg__app_blue {
     background: #4CC9F0;
@@ -61,7 +70,10 @@ body{
 /* Gradients  */
 
 .landing__gradient {
-    background-image: linear-gradient(135deg, #4CC9F0, #CAFFBF, #FFF698)
+    background-image: linear-gradient(135deg, #0050a4 , #fff, #ef4135 )
+}
+.landing__gradient_reducedOpacity {
+    background-image: linear-gradient(135deg, rgba(0, 79, 164, 0.9) , rgba(255, 255, 255, 0.9), rgba(239, 65, 53, 0.9) )
 }
 
 /* Gradients END */
@@ -98,7 +110,7 @@ body{
     width: 900px;
     height: 400px;
     filter: blur(200px);
-    background-image: linear-gradient(135deg, #4CC9F0, #CAFFBF, #FFF698)
+    background-image: linear-gradient(135deg, #0050a4 , #ffffff , #ef4135 )
 }
 .explore__prompt_height {
     min-height: 10vh;

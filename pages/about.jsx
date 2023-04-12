@@ -6,21 +6,28 @@ const About = () => {
   return (
     <div>
       <Head>
-        <title>French For All | About</title>
+        <title>About me - Friendly & experienced native speaker | French For All</title>
         <link rel="shortcut icon" href="/ffa__icon.png"/>
+        <meta charSet="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta property="og:locale" content="en_GB"/>
+        <meta property="og:type" content="website"/>
         <meta
           property="og:description"
-          content="Get help from a professional native speaker with 1 to 1 lessons tailored to you.
-          I'm dedicated to helping you improve your French abilities."
+          content="Find out more about why I love teaching French and my experience from 25+ years of teaching."
         />
         <meta
           name="description"
-          content="Get help from a local professional native speaker with 1 to 1 lessons tailored to you.
-          I'm dedicated to helping you improve your French abilities."
+          content="Find out more about why I love teaching French and my experience from 25+ years of teaching."
         />
         <meta
           property="og:image"
           content="/ffa__og_image.png"
+        />
+        <meta 
+         name="keywords"
+         content="french lessons, online french lessons, french lessons near me, french lessons london, french lessons sussex, 
+         french lesson, french online lessons, french classes near me, learn french online, french for all"
         />
       </Head>
       <div className="ml-auto mr-auto app__width">
@@ -28,40 +35,40 @@ const About = () => {
           <div className="flex-row xl:flex items-center justify-around gap-5">
             <div className="desktop__view_only tablet__view_none">
               <Image
-                width={350}
-                height={350}
+                width={250}
+                height={250}
                 className="header__image_settings rounded-full"
-                src="/footer__img_grid_1.png"
+                src="/img__french_cafe.jpg"
                 
               />
               <Image
-                width={250}
-                height={250}
-                className="header__image_settings mt-20 rounded-full w-8/12"
-                src="/footer__img_grid_3.png"
                 
+                width={200}
+                height={200}
+                className="header__image_settings mt-20 rounded-full w-8/12"
+                src="/img__french_cafe_2.jpg"
               />
             </div>
+            
             <div className="flex-row xl:w-6/12 mb-20 xl:mb-0">
               <h1 className="font__quicksand xl:text-5xl text-4xl text-center font-semibold dark:text-neutral-200">
                 About me
               </h1>
               <p className="text-center mt-5 dark:text-neutral-200">
-                Find out more about me and why I love teaching 
-                French
+                Find out more about me and why I love teaching French.
               </p>
             </div>
 
             <div className="flex items-center justify-center xl:justify-start xl:items-start">
               <Image
-                width={250}
-                height={250}
-                className="footer__image_settings rounded-full"
+                width={225}
+                height={225}
+                className="rounded-full"
                 id="header__img_1"
-                src="/footer__img_2.jpg"
-                
+                src="/img__eiffel_tower.jpg"
               />
             </div>
+            
           </div>
         </section>
 
@@ -92,21 +99,25 @@ const About = () => {
         </section>
 
         <section className="mt-20 mb-20">
-          <p className="dark:text-neutral-200 text-xl text-center">
-            This is the about section, here should be a quick description of who you are and what you do. 
-            It shouldn't be too long but should also explain how you started the business and for what purpose. 
-            Go through and describe important elements of your businesses' story. 
+          <p className="dark:text-neutral-200 text-xl xl:text-left text-center">
+            I am French and I've lived in the UK for 30 years, 25 of which have been spent teaching. I have found it 
+            very rewarding taking each of my students on their individual learning journeys and watching them become confident
+            in all the facets of the language. 
+            <br />
+            <br />
+            I am very patient and encouraging and it is important to me that my students feel at ease all the time. I always suggest a 
+            free, informal introductory meeting before we start. Just tap on the "Call" button to navigate to my bookings 
+            page.
           </p>
         </section>
 
         <section className="mt-20 mb-20 bg-neutral-600 rounded-2xl dark:bg-neutral-700 p-4">
           <div className="flex-row items-center justify-center">
-            <p className="bg__app_blue p-2 rounded-2xl ml-auto mr-auto w-4/12 xl:w-1/12 text-center text-sm mb-3 mt-3">
-                Jane Brown
+            <p className="landing__gradient_reducedOpacity p-2 rounded-2xl ml-auto mr-auto w-5/12 xl:w-2/12 text-center text-sm mb-3 mt-3">
+                Rachel Wilkey
             </p>
-            <p className="text-3xl xl:text-4xl text-center col__app_blue mb-6">
-              "Valérie's lessons are fantastic, I always look forward to it. Her 
-              teaching style has helped me improve my skills so much!"
+            <p className="text-3xl xl:text-4xl text-white text-center mb-6">
+              "Valérie was an understanding teacher who made the lessons enjoyable."
             </p>
           </div>
         </section>
@@ -114,7 +125,7 @@ const About = () => {
         <section className="mt-20 mb-20 flex-row xl:flex justify-between items-center font-semibold">
         <div>
           <h6 className="dark:text-white text-4xl xl:text-5xl text-center xl:text-left xl:w-10/12">
-            Let's level up your French abilities
+            Get the support you need.
           </h6>
           <Link href="/booking">
             <div className="flex items-center justify-center xl:justify-start xl:justfiy-left">
@@ -129,15 +140,15 @@ const About = () => {
           <Image 
           width={250}
           height={250}
-          src="/footer__img_grid_1.png"
-          className="footer__img_settings "
+          src="/img__french_cafe.jpg"
+          className="footer__img_settings"
           id="footer__img_1"
           
           />
           <Image 
           width={250}
           height={250}
-          src="/footer__img_2.jpg"
+          src="/img__eiffel_tower.jpg"
           className="footer__img_settings "
           id="footer__img_2"
           
@@ -145,7 +156,7 @@ const About = () => {
           <Image 
           width={250}
           height={250}
-          src="/footer__img_grid_3.png"
+          src="/img__french_cafe_2.jpg"
           id="footer__img_3"
           
           />

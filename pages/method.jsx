@@ -6,21 +6,28 @@ const Method = () => {
   return (
     <div>
       <Head>
-        <title>French For All | Method</title>
+        <title>Proven teaching methods - Friendly & experienced native speaker | French For All</title>
         <link rel="shortcut icon" href="/ffa__icon.png"/>
+        <meta charSet="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta property="og:locale" content="en_GB"/>
+        <meta property="og:type" content="website"/>
         <meta
           property="og:description"
-          content="Get help from a professional native speaker with 1 to 1 lessons tailored to you.
-          I'm dedicated to helping you improve your French abilities."
+          content="How I use proven teaching methods to help you drastically improve your French ability."
         />
         <meta
           name="description"
-          content="Get help from a local professional native speaker with 1 to 1 lessons tailored to you.
-          I'm dedicated to helping you improve your French abilities."
+          content="How I use proven teaching methods to help you drastically improve your French ability."
         />
         <meta
           property="og:image"
           content="/ffa__og_image.png"
+        />
+        <meta 
+         name="keywords"
+         content="french lessons, online french lessons, french lessons near me, french lessons london, french lessons sussex, 
+         french lesson, french online lessons, french classes near me, learn french online, french for all"
         />
       </Head>
       <div className="overflow-x-hidden ml-auto mr-auto app__width">
@@ -28,38 +35,37 @@ const Method = () => {
           <div className="flex-row xl:flex items-center justify-around gap-5">
             <div className="desktop__view_only tablet__view_none">
               <Image
-                width={350}
-                height={350}
+                width={250}
+                height={250}
                 className="header__image_settings rounded-full"
-                src="/footer__img_grid_1.png"
+                src="/img__french_cafe.jpg"
                 
               />
               <Image
-                
-                width={250}
-                height={250}
+                width={200}
+                height={200}
                 className="header__image_settings mt-20 rounded-full w-8/12"
-                src="/footer__img_grid_3.png"
+                src="/img__french_cafe_2.jpg"
               />
             </div>
             
             <div className="flex-row xl:w-6/12 mb-20 xl:mb-0">
               <h1 className="font__quicksand xl:text-5xl text-4xl text-center font-semibold dark:text-neutral-200">
-                My teaching method
+                The way I teach
               </h1>
               <p className="text-center mt-5 dark:text-neutral-200">
-                Find out more about how the methods I use to teach help you
-                achieve your full potential and ace your French goals.
+                Find out more about how I work and how I'll be able to help you 
+                achieve your goals.
               </p>
             </div>
 
             <div className="flex items-center justify-center xl:justify-start xl:items-start">
               <Image
-                width={250}
-                height={250}
-                className="footer__image_settings rounded-full"
+                width={225}
+                height={225}
+                className="rounded-full"
                 id="header__img_1"
-                src="/footer__img_2.jpg"
+                src="/img__eiffel_tower.jpg"
               />
             </div>
             
@@ -93,27 +99,28 @@ const Method = () => {
         </section>
 
         <section className="mt-20 mb-20 flex-row xl:flex items-center gap-5 justify-between">
-          <div className="bg__app_green p-4 rounded-2xl xl:mt-0 mt-5">
+          <div className="bg__ff_blue text-white p-4 xl:w-10/12 xl:min-h-[50vh] rounded-2xl xl:mt-0 mt-5">
             <p className="">
               01
             </p>
-            <div className="about__divider_line bg-black mt-2"></div>
+            <div className="about__divider_line bg-white mt-2"></div>
             <h2 className="text-3xl xl:text-4xl mt-2 mb-2 font-semibold ">
               Skype Lessons
             </h2>
-            <p className="rounded-xl border border-black mt-2 p-4 xl:p-2">
+            <p className="rounded-xl border border-white mt-2 p-4 xl:p-2">
                 &#10003; Very flexible timing, held over Skype or Zoom 
                 meeting.
             </p>
-            <p className="rounded-xl border border-black mt-2 p-4 xl:p-2">
-                &#10003; Typically lasts 1 hour.
+            <p className="rounded-xl border border-white mt-2 p-4 xl:p-2">
+                &#10003; Typically lasts an hour with the option of doing 
+                45 minute sessions.
             </p>
-            <p className="rounded-xl border border-black mt-2 mb-5 p-4 xl:p-2">
+            <p className="rounded-xl border border-white mt-2 mb-5 p-4 xl:p-2">
                 &#10003; Pay as you go pricing, you'll only pay for the 
                 lessons that you take with me.
             </p>
           </div>
-          <div className="bg__app_green p-4 rounded-2xl xl:mt-0 mt-5">
+          <div className="bg-neutral-200 p-4 xl:w-10/12 xl:min-h-[50vh] rounded-2xl xl:mt-0 mt-5">
             <p className="">
               02
             </p>
@@ -125,31 +132,31 @@ const Method = () => {
                 &#10003; Quiet and comfortable environment in the countryside. 
             </p>
             <p className="rounded-xl border border-black mt-2 p-4 xl:p-2">
-                &#10003; Typically lasts anywhere from 1 hour to 2 hours 
-                depending on what you are looking for. 
+                &#10003; Typically lasts an hour with the option of doing 
+                45 minute sessions. 
             </p>
             <p className="rounded-xl border border-black mt-2 mb-5  p-4 xl:p-2">
                 &#10003; Pay as you go pricing, you'll only pay for the 
                 lessons that you take with me. 
             </p>
           </div>
-          <div className="bg__app_green p-4 rounded-2xl xl:mt-0 mt-5">
+          <div className="bg__ff_red text-white p-4 xl:w-10/12 xl:min-h-[50vh] rounded-2xl xl:mt-0 mt-5">
             <p className="">
               03
             </p>
-            <div className="about__divider_line bg-black mt-2"></div>
+            <div className="about__divider_line bg-white mt-2"></div>
             <h4 className="text-3xl xl:text-4xl mt-2 mb-2 font-semibold ">
               Whatsapp support
             </h4>
-            <p className="rounded-xl border border-black mt-2 p-4 xl:p-2">
-                &#10003; An entirely verbal lesson where you'll work primarily on speaking. 
+            <p className="rounded-xl border border-white mt-2 p-4 xl:p-2">
+                &#10003; Between lessons you'll be able to practive what
+                you've learnt by sending me messages. 
             </p>
-            <p className="rounded-xl border border-black mt-2 p-4 xl:p-2">
-                &#10003; Typically lasts 30 minutes.
+            <p className="rounded-xl border border-white mt-2 p-4 xl:p-2">
+                &#10003; The messages will be sent back to you corrected.
             </p>
-            <p className="rounded-xl border border-black mt-2 mb-5  p-4 xl:p-2">
-                &#10003; Pay as you go pricing, you'll only pay for the lessons that 
-                you take with me.
+            <p className="rounded-xl border border-white mt-2 mb-5  p-4 xl:p-2">
+                &#10003; This service is <span className="font-semibold">free</span> and part of your tuition fee.
             </p>
           </div>
         </section>
@@ -161,13 +168,9 @@ const Method = () => {
               What sets me apart from other tutors? 
             </h5>
             <div className="about__divider_line bg-black dark:bg-white mt-4 mb-2"></div>
-            <p className="text-xl dark:text-neutral-200">
-              This could be a small piece of short information that the user 
-              should read.
-            </p>
             <Link href="/booking">
               <div className="flex items-center xl:justify-start justify-center">
-                <button className="mt-3 xl:mt-5 font-medium text-white dark:text-black flex items-center xl:justify-start gap-2 px-4 py-2 lg:py-2 bg-black dark:bg-white rounded-lg">
+                <button className="mt-2 xl:mt-5 font-medium text-white dark:text-black flex items-center xl:justify-start gap-2 px-4 py-2 lg:py-2 bg-black dark:bg-white rounded-lg">
                   <div className="cta__pulse_active dark:bg-green-600"></div>
                   Book a free call
                 </button>
@@ -177,11 +180,19 @@ const Method = () => {
           <div className="xl:w-7/12 xl:gap-5 flex-row xl:flex xl:justify-around items-start justify-center mt-5 xl:mt-0">
             <div>
               <p className="dark:text-neutral-200">
-                This is an area that should be filled with some text describing in more depth 
-                what makes you a good tutor. What sets you apart from other tutors in the area? 
-                How are you able to deliver a more valuable experience than your competition. 
-                Try to keep it short and concise so that the user actually reads the text. Did you know that most of the 
-                time, when presented with a large text section, the user won't read much or any of it.
+                I have over 25 years' experience working with adults of all ages and levels. Their drive to learn 
+                French has varied from student to student. Some have wanted to learn for holidays, others were moving to France - 
+                many have done so to fulfill a personal ambition. I have coached A level and GCSE students. 
+                I have also helped university students in their first and second year.
+                <br />
+                <br />
+                I understand that learning a language can initially seem a little daunting but I will 
+                support you with a clear and thorough, step by step approach. In each session my aim is to 
+                make you feel confident and able to use the tools we have learnt in a way that is relavent 
+                to you.   
+                <br />
+                <br />
+                Most find the biggest step is just deciding to give it a go! 
               </p>
             </div>
           </div>
@@ -190,20 +201,19 @@ const Method = () => {
 
       <section className="mt-20 mb-20 bg-neutral-600 rounded-2xl dark:bg-neutral-700 p-4">
         <div className="flex-row items-center justify-center">
-          <p className="bg__app_green p-2 rounded-2xl ml-auto mr-auto w-4/12 xl:w-1/12 text-center text-sm mb-3 mt-3">
-              Sarah Smith
+          <p className="landing__gradient_reducedOpacity p-2 rounded-2xl ml-auto mr-auto w-5/12 xl:w-2/12 text-center text-sm mb-3 mt-3">
+              Victoria Redman
           </p>
-          <p className="text-3xl xl:text-4xl text-center col__app_green mb-6">
-            "Valérie's lessons are fantastic, I always look forward to it. Her 
-            teaching style is the has helped me improve my skills so much!"
+          <p className="text-3xl xl:text-4xl text-center text-white mb-6">
+            "Without your help I would never have been able to achieve the grade."
           </p>
         </div>
       </section>
 
-        <section className="mt-20 mb-20 flex-row xl:flex justify-between items-center font-semibold">
+      <section className="mt-20 mb-20 flex-row xl:flex justify-between items-center font-semibold">
         <div>
           <h6 className="dark:text-white text-4xl xl:text-5xl text-center xl:text-left xl:w-10/12">
-            Let's level up your French abilities 
+            Get the support you need.
           </h6>
           <Link href="/booking">
             <div className="flex items-center justify-center xl:justify-start xl:justfiy-left">
@@ -216,28 +226,28 @@ const Method = () => {
         </div>
         <div className="footer__img_grid gap-5 mt-20 xl:mt-0">
           <Image 
-          width={300}
-          height={300}
-          src="/footer__img_grid_1.png"
-          className="footer__img_settings "
+          width={250}
+          height={250}
+          src="/img__french_cafe.jpg"
+          className="footer__img_settings"
           id="footer__img_1"
           
           />
           <Image 
-          width={300}
-          height={300}
-          src="/footer__img_2.jpg"
+          width={250}
+          height={250}
+          src="/img__eiffel_tower.jpg"
           className="footer__img_settings "
           id="footer__img_2"
           
           />
           <Image 
-          width={300}
-          height={300}
-          src="/footer__img_grid_3.png"
+          width={250}
+          height={250}
+          src="/img__french_cafe_2.jpg"
           id="footer__img_3"
-          />
           
+          />
         </div>
       </section>
       </div>
