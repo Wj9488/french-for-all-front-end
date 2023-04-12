@@ -450,6 +450,7 @@ export default function Home() {
             </div>
           ))}
           <form
+            method="POST"
             action="https://formsubmit.co/valeroche@btinternet.com"
             className="flex-row mt-10"
           >
