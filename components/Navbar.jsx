@@ -35,8 +35,8 @@ const Navbar = () => {
       <nav
         className={
           navHeight
-            ? "xl:mt-2 sticky__nav compacted__nav flex items-center justify-between mt-0 ml-auto mr-auto pl-2 pr-2 lg:pr-0 lg:pl-4 w-12/12 lg:w-11/12 xl:w-11/12 md:rounded-2xl transition-all dark:bg-neutral-700"
-            : "xl:mt-2 sticky__nav nav__height flex items-center justify-between mt-0 ml-auto mr-auto pl-2 pr-2 lg:pr-0 lg:pl-4 w-12/12 lg:w-11/12 xl:w-11/12 md:rounded-2xl transition-all dark:bg-neutral-700"
+            ? "xl:mt-2 sticky__nav compacted__nav flex items-center justify-between mt-0 ml-auto mr-auto pl-2 pr-2 lg:pr-0 lg:pl-4 w-12/12 xl:w-11/12 md:rounded-xl 2xl:rounded-2xl transition-all dark:bg-neutral-700"
+            : "xl:mt-2 sticky__nav nav__height flex items-center justify-between mt-0 ml-auto mr-auto pl-2 pr-2 lg:pr-0 lg:pl-4 w-12/12 xl:w-11/12 md:rounded-xl 2xl:rounded-2xl transition-all dark:bg-neutral-700"
         }
       >
         <div aria-label="French For All">
@@ -78,7 +78,7 @@ const Navbar = () => {
             <li className="desktop__view_only dark:text-white">Contact</li>
           </Link>
           <Link href="/booking">
-            <div className="extra__small_none flex items-center gap-2 px-2 py-2 lg:py-2 dark:bg-white bg-black rounded-lg">
+            <div className="extra__small_none flex items-center gap-2 px-2 py-2 lg:py-1 2xl:py-2 dark:bg-white bg-black rounded-lg">
               <div className="cta__pulse_active dark:bg-green-600"></div>
               <li className="lg:text-base text-sm text-white dark:text-black">{ctaText}</li>
             </div>

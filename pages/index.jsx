@@ -69,10 +69,10 @@ export default function Home() {
 
       <header className="header__height flex items-center justify-center" >
         <div id="header__bg_img" className="dark:opacity-50"></div>
-        <div className="flex-row xl:flex xl:flex-center xl:items-center xl:gap-20 z-10">
+        <div className="flex-row xl:flex  xl:flex-center xl:items-center xl:gap-20 z-10">
           <div className="xl:w-7/12">
-            <div className="font__quicksand font-semibold xl:text-5xl text-4xl xl:w-11/12">
-              <h1 className="dark:text-neutral-200 text-5xl xl:text-6xl text-center xl:text-left">
+            <div className="font-semibold xl:text-5xl text-4xl xl:w-11/12">
+              <h1 className="dark:text-neutral-200 text-5xl xl:text-5xl 2xl:text-6xl text-center xl:text-left">
               French language tuition with a native speaker - personalised lessons for all levels
               </h1>
             </div>
@@ -127,9 +127,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex-row mt-0 xl:mt-20 xl:mb-20 xl:flex items-start text-center xl:text-left justify-between">
-        <div className="mb-10 xl:mb-5 xl:w-3/12">
-          <div className="flex gap-3 items-center justify-center xl:justify-start">
+      <section className="flex-row mt-0 lg:mt-20 lg:mb-20 lg:gap-5 xl:gap-0 lg:flex items-start text-center lg:text-left justify-between">
+        <div className="mb-10 xl:mb-5 lg:w-4/12 xl:w-3/12">
+          <div className="flex gap-3 items-center justify-center lg:justify-start">
             <svg
               width="28"
               height="27"
@@ -154,8 +154,8 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="mb-10 xl:mb-5 xl:w-3/12">
-          <div className="flex gap-3 items-center justify-center xl:justify-start">
+        <div className="mb-10 xl:mb-5 lg:w-4/12 xl:w-3/12">
+          <div className="flex gap-3 items-center justify-center lg:justify-start">
             <svg
               width="28"
               height="27"
@@ -189,8 +189,8 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="mb-10 xl:mb-5 xl:w-3/12">
-          <div className="flex gap-3 items-center justify-center xl:justify-start">
+        <div className="mb-10 xl:mb-5 lg:w-4/12 xl:w-3/12">
+          <div className="flex gap-3 items-center justify-center lg:justify-start">
             <svg
               width="28"
               height="28"
@@ -214,7 +214,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex-row xl:flex items-start gap-10 text-center xl:text-left xl:items-center justify-around">
+      <section className="flex-row lg:flex items-start gap-10 text-center lg:text-left lg:items-center justify-around">
         <div className="mt-20 mb-20  flex-row xl:flex items-center justify-center xl:justify-between">
           <div className="xl:w-4/12">
             <h3 className="text-4xl xl:text-5xl font-semibold dark:text-neutral-200">
@@ -226,8 +226,8 @@ export default function Home() {
               your French.
             </p>
             <Link href="/booking">
-              <div className="flex items-center xl:justify-start justify-center">
-                <button className="mt-3 xl:mt-5 font-medium text-white dark:text-black flex items-center xl:justify-start gap-2 px-4 py-2 lg:py-2 bg-black dark:bg-white rounded-lg">
+              <div className="flex items-center lg:justify-start justify-center">
+                <button className="mt-3 xl:mt-5 font-medium text-white dark:text-black flex items-center lg:justify-start gap-2 px-4 py-2 lg:py-2 bg-black dark:bg-white rounded-lg">
                   <div className="cta__pulse_active dark:bg-green-600"></div>
                   Help me improve
                 </button>
@@ -258,16 +258,16 @@ export default function Home() {
       </section>
 
       <section className="mb-20 mt-20 landing__gradient dark:opacity-80 rounded-2xl p-4 xl:p-6">
-        <h4 className="text-4xl text-white xl:text-5xl font-semibold xl:text-left text-center">
+        <h4 className="text-4xl text-white 2xl:text-5xl font-semibold xl:text-left text-center">
           A few success stories
         </h4>
         <div className="flex-row xl:flex flex-1 items-center justify-center gap-5 xl:justify-around mt-5 mb-5">
         <Link href="/reviews">
           <div className="bg-neutral-700 xl:min-h-[50vh] min-w-full rounded-2xl p-2 mt-5 xl-mt-0">
-            <p className="bg-white p-2 rounded-2xl w-5/12 text-center text-xs">
+            <p className="bg-white p-2 rounded-2xl w-6/12 text-center text-xs">
               Barry Langridge
             </p>
-            <p className="text-white text-2xl mt-5 mb-5">
+            <p className="text-white xl:text-xl 2xl:text-2xl mt-5 mb-5">
               "Valérie is a born teacher... She always accompanies her students warmly but firmly; encouraging success but very clear-eyed about weaknesses"
             </p>
             <div>
@@ -296,7 +296,7 @@ export default function Home() {
             <p className="bg-white p-2 rounded-2xl w-4/12 text-center text-xs">
               Penny Massey
             </p>
-            <p className="text-white text-2xl mt-5 mb-5">
+            <p className="text-white xl:text-xl 2xl:text-2xl mt-5 mb-5">
               "The ambience is friendly and very supportive with a lovely sprinkling of humour.  Valérie is an excellent teacher; very encouraging and patient while gently insisting that mistakes are corrected."
             </p>
             <div>
@@ -325,7 +325,7 @@ export default function Home() {
             <p className="bg-white p-2 rounded-2xl w-4/12 text-center text-xs">
               Mike Leonard
             </p>
-            <p className="text-white text-2xl mt-5 mb-5">
+            <p className="text-white xl:text-xl 2xl:text-2xl mt-5 mb-5">
               "Our progress is reviewed regularly in class which is helpful and builds confidence. My vocabulary
               has increased and the ongoing reviews ensures that you don't simply learn something and leave
               it but continue to use it and therefore remember it."
@@ -358,14 +358,14 @@ export default function Home() {
         Pricing
       </h4>
 
-      <section className="flex-row xl:flex items-start justify-between gap-5">
-        <div className="text-center xl:text-left xl:w-4/12 dark:opacity-80 pricing__border_box landing__gradient mt-3 xl:mt-0 p-5 rounded-xl flex justify-start items-center xl:justify-center">
+      <section className="flex-row lg:flex items-start justify-between gap-5">
+        <div className="text-center xl:text-left xl:w-4/12 dark:opacity-80 pricing__border_box landing__gradient mt-3 lg:mt-0 p-5 rounded-xl flex justify-start items-center xl:justify-center">
           <p className="font-light font__quicksand large__text">
             £25 <span className="text-xl">/ hour</span>
           </p>
         </div>
-        <div className="pricing__border_box dark:border-neutral-200 mt-5 xl:mt-0 p-5 rounded-xl xl:w-4/12">
-          <p className="font-semibold font__quicksand text-xl dark:text-neutral-200">
+        <div className="pricing__border_box dark:border-neutral-200 mt-5 lg:mt-0 p-5 rounded-xl xl:w-4/12">
+          <p className="font-semibold font__quicksand text-base 2xl:text-xl dark:text-neutral-200">
             What my lessons offer
           </p>
           <p className="mt-4 dark:text-neutral-200">
@@ -415,7 +415,7 @@ export default function Home() {
       <section className="mb-20 mt-20 gap-5 xl:mt-30 xl:mb-30 flex-row xl:flex items-center xl:items-start justify-between"
       id="contact-me">
         <div className="flex-row">
-          <h5 className="font-semibold text-4xl xl:text-5xl text-center xl:text-left mb-5 xl:w-10/12 dark:text-neutral-200">
+          <h5 className="font-semibold text-4xl 2xl:text-5xl text-center xl:text-left mb-5 xl:w-10/12 dark:text-neutral-200">
             Got questions?
           </h5>
           <div className="about__divider_line bg-black dark:bg-neutral-200 mb-4 xl:mb-2"></div>
@@ -508,7 +508,7 @@ export default function Home() {
 
       <section className="mt-20 mb-20 flex-row xl:flex justify-between items-center font-semibold">
         <div>
-          <h6 className="dark:text-white text-4xl xl:text-5xl text-center xl:text-left xl:w-10/12">
+          <h6 className="dark:text-white text-4xl 2xl:text-5xl text-center xl:text-left xl:w-10/12">
             Get the support you need.
           </h6>
           <Link href="/booking">
