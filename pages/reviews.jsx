@@ -6,16 +6,16 @@ const Reviews = () => {
 
   const customerTestimonials = [
     {
-      customer: "Victoria Redman",
-      review: "This is a little note to say a really big thank you for all your help and patience during our lessons - I got a B (was expected a C). Without your help I would never have been able to achieve the grade."
+      customer: "Barry Langridge",
+      review: "In retirement one of my main aims was to achieve fluency in conversational French ( I had virtually nothing to start with). By great good fortune I discovered Valerie. At first face-to-face, then through Covid on Skype, and then through regular texts - lessons, chats, and always encouragement, to a level of fluency which has turned our regular excursions in our motorhome- to The Dordogne, Normandy, The Loire Valley - to increasingly rewarding and experiences. How well French people respond to an Englishman’s efforts. Valérie is a born teacher, and she has made me a friend. She always accompanies her students warmly but firmly; encouraging success but very clear-eyed about weaknesses- to which she will unerringly return! It is a great joy to learn with her. Not only good for the travel, good for the brain, but good fun! I could not recommend her highly enough."
     },
     {
-      customer: "Rachel Wilkey",
-      review: "I came to Valérie for private French lessons, because as a student, I was finding it difficult to fully understand and speak French GCSE. The lessons were useful because now I fully understand basic French and Valérie has taught me to use different techniques on how to form sentences properly. I now can speak French more fluently, and I'm more able to understand somebody speaking in French. I enjoyed the lessons not just because I was improving but Valérie was an understanding teacher who made the lessons enjoyable. "
+      customer: "Penny Massey",
+      review: "We have been enjoying French lessons with Valérie for over a year.  Following on from several years studying at the adult education centre we were very keen to continue to maintain and improve our French on a private basis. An introduction to Valérie by an acquaintance has proved to be just what we needed. Lessons are largely conversational and held almost entirely in French.  Topics are varied and conversation is free-flowing and wide ranging with new vocabulary introduced as required.  Idioms and colloquialisms have enhanced our speaking skills and the inevitable grammar has greatly improved our ability to express ourselves in French. The ambience is friendly and very supportive with a lovely sprinkling of humour.  Valérie is an excellent teacher; very encouraging and patient while gently insisting that mistakes are corrected. We have really managed to keep our French going and improving and really look forward to our weekly sessions."
     },
     {
-      customer: "Allison Hood",
-      review: "I just want to say how grateful I am for all your help and support. I can honestly say I wouldn't have got through my A level without your ongoing commitment. In fact, being left with only my teachers probably would have resulted in me dropping French altogether. You've put up with a lot and really put my confidence up - for that I thank you.",
+      customer: "Mike Leonard",
+      review: "Following my retirement in 2016 I decided to take up French language and conversation tuition. Having worked for a French company about fifteen years earlier it had been a requirement to learn business related French. I wanted to expand my conversational abilities as I enjoy visiting France for vacations and wine tasting tours. For about four years I was very happy with the tuition at the local college of further education. However, the course changed, Madame Jones was offering tuition for small classes at her home and seemed to offer a very different style of tuition which very quickly proved to be effective. To begin with we were encouraged to converse on a daily basis between lessons using text messages. This was like having mini lessons every day! Great practice! We continue to learn different ways of expressing ourselves in conversation, not usually covered by the courses at college and more appropriate in every day conversation. Our progress is reviewed regularly in class which is helpful and builds confidence. My vocabulary has increased and the ongoing reviews ensure that you don't simply learn something and leave it but continue to use it and therefore remember it. The range of conversation topics is broad and continues to expand which makes the classes fun and enjoyable. I am still enjoying classes after two years which are informal and friendly. Sometimes it's like meeting with friends and just having a chat, albeit with corrections noted as necessary. I am happy with my progress.",
     },
   ]
 
@@ -27,6 +27,14 @@ const Reviews = () => {
     {
       customer: "Susie and Johnny",
       review: "Thank you so much for all the help and support you have given Johnny, and especially for the way you have encouraged his love for the French language."
+    },
+    {
+      customer: "Victoria Redman",
+      review: "This is a little note to say a really big thank you for all your help and patience during our lessons - I got a B (was expected a C). Without your help I would never have been able to achieve the grade."
+    },
+    {
+      customer: "Rachel Wilkey",
+      review: "I came to Valérie for private French lessons, because as a student, I was finding it difficult to fully understand and speak French GCSE. The lessons were useful because now I fully understand basic French and Valérie has taught me to use different techniques on how to form sentences properly. I now can speak French more fluently, and I'm more able to understand somebody speaking in French. I enjoyed the lessons not just because I was improving but Valérie was an understanding teacher who made the lessons enjoyable. "
     },
     {
       customer: "Sarah",
@@ -43,6 +51,10 @@ const Reviews = () => {
     {
       customer: "Mike",
       review: "Thank you for your help and patience.",
+    },
+    {
+      customer: "Allison Hood",
+      review: "I just want to say how grateful I am for all your help and support. I can honestly say I wouldn't have got through my A level without your ongoing commitment. In fact, being left with only my teachers probably would have resulted in me dropping French altogether. You've put up with a lot and really put my confidence up - for that I thank you.",
     },
     {
       customer: "Marilyn",
@@ -84,7 +96,7 @@ const Reviews = () => {
           Testimonials
         </h1>
 
-        <div className="flex-row xl:grid xl:grid-cols-3 xl:grid-rows-1 xl:col-auto gap-5">
+        <div className="flex-row xl:grid xl:grid-cols-2 xl:grid-rows-2 xl:col-auto gap-5">
               {customerTestimonials.map((testimonial) => (
                 <div className="mt-5 bg-neutral-100 dark:bg-neutral-700 p-4 rounded-lg shadow-lg">
                   <div className="flex gap-5 items-center">

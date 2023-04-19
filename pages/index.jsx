@@ -72,9 +72,9 @@ export default function Home() {
         <div className="flex-row xl:flex xl:flex-center xl:items-center xl:gap-20 z-10">
           <div className="xl:w-7/12">
             <div className="font__quicksand font-semibold xl:text-5xl text-4xl xl:w-11/12">
-              <p className="dark:text-neutral-200 text-5xl lg:text-6xl text-center xl:text-left">
+              <h1 className="dark:text-neutral-200 text-5xl xl:text-6xl text-center xl:text-left">
               French language tuition with a native speaker - personalised lessons for all levels
-              </p>
+              </h1>
             </div>
             <p className="dark:text-neutral-200 mt-5 text-xl text-center xl:text-left">
               With 25 years of teaching experience, I've helped hundreds of people gain confidence 
@@ -100,7 +100,6 @@ export default function Home() {
               alt="Valerie Jones - Tutor"
               width={600}
               height={600}
-              
               className="mt-10 xl:mt-0 rounded-2xl image__settings"
             />
           </div>
@@ -264,43 +263,12 @@ export default function Home() {
         </h4>
         <div className="flex-row xl:flex flex-1 items-center justify-center gap-5 xl:justify-around mt-5 mb-5">
         <Link href="/reviews">
-          <div className="bg-neutral-700 xl:min-h-[50vh] rounded-2xl p-2 mt-5 xl-mt-0">
-            <p className="bg-white p-2 rounded-2xl w-5/12 text-center text-sm">
-              Victoria Redman
+          <div className="bg-neutral-700 xl:min-h-[50vh] min-w-full rounded-2xl p-2 mt-5 xl-mt-0">
+            <p className="bg-white p-2 rounded-2xl w-5/12 text-center text-xs">
+              Barry Langridge
             </p>
-            <p className="text-white text-3xl xl:text-4xl mt-5 mb-5">
-              "Without your help I would have never been able 
-              to achieve the grade."
-            </p>
-            <div>
-            </div>
-            <div className="flex items-center justify-between mt-5 xl:mt-3 bg-neutral-700 p-2">
-              <p className="text-white">Read testimonial</p>
-              <svg
-                width="26"
-                height="26"
-                viewBox="0 0 26 26"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <circle cx="13" cy="13" r="13" fill="white" />
-                <path
-                  d="M18.3536 13.3536C18.5488 13.1583 18.5488 12.8417 18.3536 12.6464L15.1716 9.46447C14.9763 9.2692 14.6597 9.2692 14.4645 9.46447C14.2692 9.65973 14.2692 9.97631 14.4645 10.1716L17.2929 13L14.4645 15.8284C14.2692 16.0237 14.2692 16.3403 14.4645 16.5355C14.6597 16.7308 14.9763 16.7308 15.1716 16.5355L18.3536 13.3536ZM8 13.5H18V12.5H8V13.5Z"
-                  fill="black"
-                />
-              </svg>
-            </div>
-          </div>
-        </Link>
-
-        <Link href="/reviews">
-          <div className="bg-neutral-700 xl:min-h-[50vh] rounded-2xl p-2 mt-5 xl-mt-0">
-            <p className="bg-white p-2 rounded-2xl w-4/12 text-center text-sm">
-              Rachel Wilkey
-            </p>
-            <p className="text-white text-3xl xl:text-4xl mt-5 mb-5">
-              "I now can speak French more fluently and I'm more able to 
-              understand somebody speaking in French."
+            <p className="text-white text-2xl mt-5 mb-5">
+              "Valérie is a born teacher... She always accompanies her students warmly but firmly; encouraging success but very clear-eyed about weaknesses"
             </p>
             <div>
             </div>
@@ -324,13 +292,43 @@ export default function Home() {
         </Link>
 
         <Link href="/reviews">
-          <div className="bg-neutral-700 xl:min-h-[50vh] rounded-2xl p-2 mt-5 xl-mt-0">
-            <p className="bg-white p-2 rounded-2xl w-4/12 text-center text-sm">
-              Allison Hood
+          <div className="bg-neutral-700 xl:min-h-[50vh] min-w-full rounded-2xl p-2 mt-5 xl-mt-0">
+            <p className="bg-white p-2 rounded-2xl w-4/12 text-center text-xs">
+              Penny Massey
             </p>
-            <p className="text-white text-3xl xl:text-4xl mt-5 mb-5">
-              "Being left with only my teachers probably would have 
-              resulted in me dropping French altogether."
+            <p className="text-white text-2xl mt-5 mb-5">
+              "The ambience is friendly and very supportive with a lovely sprinkling of humour.  Valérie is an excellent teacher; very encouraging and patient while gently insisting that mistakes are corrected."
+            </p>
+            <div>
+            </div>
+            <div className="flex items-center justify-between mt-5 xl:mt-3 bg-neutral-700 p-2">
+              <p className="text-white">Read testimonial</p>
+              <svg
+                width="26"
+                height="26"
+                viewBox="0 0 26 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="13" cy="13" r="13" fill="white" />
+                <path
+                  d="M18.3536 13.3536C18.5488 13.1583 18.5488 12.8417 18.3536 12.6464L15.1716 9.46447C14.9763 9.2692 14.6597 9.2692 14.4645 9.46447C14.2692 9.65973 14.2692 9.97631 14.4645 10.1716L17.2929 13L14.4645 15.8284C14.2692 16.0237 14.2692 16.3403 14.4645 16.5355C14.6597 16.7308 14.9763 16.7308 15.1716 16.5355L18.3536 13.3536ZM8 13.5H18V12.5H8V13.5Z"
+                  fill="black"
+                />
+              </svg>
+            </div>
+          </div>
+        </Link>
+
+        <Link href="/reviews">
+          <div className="bg-neutral-700 xl:min-h-[50vh] min-w-full rounded-2xl p-2 mt-5 xl-mt-0">
+            <p className="bg-white p-2 rounded-2xl w-4/12 text-center text-xs">
+              Mike Leonard
+            </p>
+            <p className="text-white text-2xl mt-5 mb-5">
+              "Our progress is reviewed regularly in class which is helpful and builds confidence. My vocabulary
+              has increased and the ongoing reviews ensures that you don't simply learn something and leave
+              it but continue to use it and therefore remember it."
             </p>
             <div>
             </div>
