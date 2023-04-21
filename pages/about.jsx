@@ -48,19 +48,19 @@ const About = () => {
       <section className="mt-20 mb-20 flex items-center justify-center">
           <div className="flex-row xl:flex items-center justify-around gap-5">
             <div className="desktop__view_only tablet__view_none">
-              <Image
+              {/* <Image
                 width={250}
                 height={250}
                 className="header__image_settings rounded-full"
                 src="/img__eiffel_tower.jpg"
-              />
+              /> */}
             </div>
             
             <div className="flex-row xl:w-6/12 mb-20 xl:mb-0">
-              <h1 className="font__quicksand xl:text-5xl text-4xl text-center font-semibold dark:text-neutral-200">
+              <h1 className="font__quicksand xl:text-5xl text-4xl font-semibold text-center lg:text-left dark:text-neutral-200">
                 About me
               </h1>
-              <p className="text-center mt-5 dark:text-neutral-200">
+              <p className="text-center lg:text-left mt-5 dark:text-neutral-200">
                 Find out more about me and why I love teaching French.
               </p>
             </div>
@@ -71,7 +71,7 @@ const About = () => {
                 height={225}
                 className="rounded-full"
                 id="header__img_1"
-                src="/img__french_bread.jpg"
+                src="/img__french_cafe_new.jpg"
               />
             </div>
             

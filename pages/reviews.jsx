@@ -170,17 +170,10 @@ const Reviews = () => {
           <Image 
           width={250}
           height={250}
-          src="/img__eiffel_tower.jpg"
+          src="/img__arc_de_triumph.jpg"
           className="footer__img_settings "
           id="footer__img_2"
           
-          />
-          <Image 
-          width={250}
-          height={250}
-          src="/img__french_bread.jpg"
-          id="footer__img_3"
-          className="desktop__view_only"
           />
         </div>
       </section>

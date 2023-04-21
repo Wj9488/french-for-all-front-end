@@ -47,27 +47,11 @@ const Method = () => {
       <div className="overflow-x-hidden ml-auto mr-auto app__width">
         <section className="mt-20 mb-20 flex items-center justify-center">
           <div className="flex-row xl:flex items-center justify-around gap-5">
-            <div className="desktop__view_only tablet__view_none">
-              <Image
-                width={250}
-                height={250}
-                className="header__image_settings rounded-full"
-                src="/img__french_market.jpg"
-                
-              />
-              {/* <Image
-                width={200}
-                height={200}
-                className="header__image_settings mt-20 rounded-full w-8/12"
-                src="/img__french_cafe_2.jpg"
-              /> */}
-            </div>
-            
             <div className="flex-row xl:w-6/12 mb-20 xl:mb-0">
-              <h1 className="font__quicksand xl:text-5xl text-4xl text-center font-semibold dark:text-neutral-200">
+              <h1 className="font__quicksand xl:text-5xl lg:text-left text-4xl text-center font-semibold dark:text-neutral-200">
                 The way I teach
               </h1>
-              <p className="text-center mt-5 dark:text-neutral-200">
+              <p className="text-center lg:text-left mt-5 dark:text-neutral-200">
                 Find out more about my methods and how I'll be able to help you 
                 achieve your goals.
               </p>
@@ -79,7 +63,7 @@ const Method = () => {
                 height={225}
                 className="rounded-full"
                 id="header__img_1"
-                src="/img__french_cafe.jpg"
+                src="/img__lavander.jpg"
               />
             </div>
             
@@ -182,7 +166,7 @@ const Method = () => {
           <Image 
           width={250}
           height={250}
-          src="/img__french_cafe_new.jpg"
+          src="/img__cafe_conversation.jpg"
           className="footer__img_settings "
           id="footer__img_2"
           />
