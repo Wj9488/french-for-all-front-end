@@ -89,7 +89,6 @@ export default function Home() {
       <header className="header__height flex items-center justify-center">
         <a.div
           id="header__bg_img"
-          className="dark:opacity-50"
           initial={{ opacity: 0 }}
           animate={{ opacity: .8 }}
           transition={{ duration: 1 }}
