@@ -1,10 +1,24 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
+import {motion as a} from "framer-motion"
 
 const Method = () => {
   return (
-    <div>
+    <a.div
+    initial={{
+      opacity: 0,
+      y: 10,
+    }}
+    animate={{
+      opacity: 1,
+      y: 0,
+    }}
+    transition={{
+      duration: .75,
+      ease: "easeOut",
+    }}
+    >
       <Head>
         <title>Proven teaching methods - Friendly & experienced native speaker | French For All</title>
         <link rel="shortcut icon" href="/ffa__icon.png"/>
@@ -38,15 +52,15 @@ const Method = () => {
                 width={250}
                 height={250}
                 className="header__image_settings rounded-full"
-                src="/img__french_cafe.jpg"
+                src="/img__french_market.jpg"
                 
               />
-              <Image
+              {/* <Image
                 width={200}
                 height={200}
                 className="header__image_settings mt-20 rounded-full w-8/12"
                 src="/img__french_cafe_2.jpg"
-              />
+              /> */}
             </div>
             
             <div className="flex-row xl:w-6/12 mb-20 xl:mb-0">
@@ -54,7 +68,7 @@ const Method = () => {
                 The way I teach
               </h1>
               <p className="text-center mt-5 dark:text-neutral-200">
-                Find out more about how I work and how I'll be able to help you 
+                Find out more about my methods and how I'll be able to help you 
                 achieve your goals.
               </p>
             </div>
@@ -65,7 +79,7 @@ const Method = () => {
                 height={225}
                 className="rounded-full"
                 id="header__img_1"
-                src="/img__eiffel_tower.jpg"
+                src="/img__french_cafe.jpg"
               />
             </div>
             
@@ -98,73 +112,10 @@ const Method = () => {
           </div>
         </section>
 
-        <section className="mt-20 mb-20 flex-row xl:flex items-center gap-5 justify-between">
-          <div className="bg__ff_blue text-white p-4 xl:w-10/12 xl:min-h-[50vh] rounded-2xl xl:mt-0 mt-5">
-            <p className="">
-              01
-            </p>
-            <div className="about__divider_line bg-white mt-2"></div>
-            <h2 className="text-3xl xl:text-4xl mt-2 mb-2 font-semibold ">
-              Skype Lessons
-            </h2>
-            <p className="rounded-xl border border-white mt-2 p-4 xl:p-2">
-                &#10003; Very flexible timing, held over Skype or Zoom 
-                meeting.
-            </p>
-            <p className="rounded-xl border border-white mt-2 p-4 xl:p-2">
-                &#10003; Typically lasts an hour with the option of doing 
-                45 minute sessions.
-            </p>
-            <p className="rounded-xl border border-white mt-2 mb-5 p-4 xl:p-2">
-                &#10003; Pay as you go pricing, you'll only pay for the 
-                lessons that you take with me.
-            </p>
-          </div>
-          <div className="bg-neutral-200 p-4 xl:w-10/12 xl:min-h-[50vh] rounded-2xl xl:mt-0 mt-5">
-            <p className="">
-              02
-            </p>
-            <div className="about__divider_line bg-black mt-2"></div>
-            <h3 className="text-3xl xl:text-4xl mt-2 mb-2 font-semibold ">
-              In person lessons
-            </h3>
-            <p className="rounded-xl border border-black mt-2 p-4 xl:p-2">
-                &#10003; Quiet and comfortable environment in the countryside. 
-            </p>
-            <p className="rounded-xl border border-black mt-2 p-4 xl:p-2">
-                &#10003; Typically lasts an hour with the option of doing 
-                45 minute sessions. 
-            </p>
-            <p className="rounded-xl border border-black mt-2 mb-5  p-4 xl:p-2">
-                &#10003; Pay as you go pricing, you'll only pay for the 
-                lessons that you take with me. 
-            </p>
-          </div>
-          <div className="bg__ff_red text-white p-4 xl:w-10/12 xl:min-h-[50vh] rounded-2xl xl:mt-0 mt-5">
-            <p className="">
-              03
-            </p>
-            <div className="about__divider_line bg-white mt-2"></div>
-            <h4 className="text-3xl xl:text-4xl mt-2 mb-2 font-semibold ">
-              Whatsapp support
-            </h4>
-            <p className="rounded-xl border border-white mt-2 p-4 xl:p-2">
-                &#10003; Between lessons you'll be able to practive what
-                you've learnt by sending me messages. 
-            </p>
-            <p className="rounded-xl border border-white mt-2 p-4 xl:p-2">
-                &#10003; The messages will be sent back to you corrected.
-            </p>
-            <p className="rounded-xl border border-white mt-2 mb-5  p-4 xl:p-2">
-                &#10003; This service is <span className="font-semibold">free</span> and part of your tuition fee.
-            </p>
-          </div>
-        </section>
-
         <section className="flex-row xl:flex items-start gap-10 text-center xl:text-left xl:items-center justify-around">
         <div className="mt-20 mb-20  flex-row xl:flex items-center justify-center xl:justify-between">
           <div className="xl:w-4/12">
-            <h5 className="text-4xl xl:text-5xl font-semibold dark:text-neutral-200">
+            <h5 className="text-4xl 2xl:text-5xl font-semibold dark:text-neutral-200">
               What sets me apart from other tutors? 
             </h5>
             <div className="about__divider_line bg-black dark:bg-white mt-4 mb-2"></div>
@@ -180,10 +131,13 @@ const Method = () => {
           <div className="xl:w-7/12 xl:gap-5 flex-row xl:flex xl:justify-around items-start justify-center mt-5 xl:mt-0">
             <div>
               <p className="dark:text-neutral-200">
-                I have over 25 years' experience working with adults of all ages and levels. Their drive to learn 
-                French has varied from student to student. Some have wanted to learn for holidays, others were moving to France - 
-                many have done so to fulfill a personal ambition. I have coached A level and GCSE students. 
-                I have also helped university students in their first and second year.
+                I have over 25 years' experience working with adults of all ages and all levels. Their drive to learn 
+                French has varied from student to student - some have wanted to learn for holidays, others were moving to France and 
+                many have done so to fulfill a personal ambition. 
+                <br />
+                <br />
+                I have coached A level and GCSE students and 
+                I have also helped University students in their first and second year.
                 <br />
                 <br />
                 I understand that learning a language can initially seem a little daunting but I will 
@@ -202,21 +156,21 @@ const Method = () => {
       <section className="mt-20 mb-20 bg-neutral-600 rounded-2xl dark:bg-neutral-700 p-4">
         <div className="flex-row items-center justify-center">
           <p className="landing__gradient_reducedOpacity p-2 rounded-2xl ml-auto mr-auto w-5/12 xl:w-2/12 text-center text-sm mb-3 mt-3">
-              Victoria Redman
+              Nicky Huckley
           </p>
-          <p className="text-3xl xl:text-4xl text-center text-white mb-6">
-            "Without your help I would never have been able to achieve the grade."
+          <p className="text-3xl 2xl:text-4xl text-center text-white mb-6">
+            "I have no hesitation in recommending Valerie as a tutor to anyone, whatever level they are currently at."
           </p>
         </div>
       </section>
 
-      <section className="mt-20 mb-20 flex-row xl:flex justify-between items-center font-semibold">
+      <section className="mt-20 mb-20 flex-row lg:flex justify-between items-center font-semibold">
         <div>
-          <h6 className="dark:text-white text-4xl xl:text-5xl text-center xl:text-left xl:w-10/12">
+          <h6 className="dark:text-white text-4xl xl:text-5xl text-center lg:text-left xl:w-10/12">
             Get the support you need.
           </h6>
           <Link href="/booking">
-            <div className="flex items-center justify-center xl:justify-start xl:justfiy-left">
+            <div className="flex items-center justify-center lg:justify-start lg:justify-left">
               <button className="mt-3 xl:mt-5 font-medium text-white dark:text-black flex items-center gap-2 px-4 py-2 lg:py-2 bg-black dark:bg-white rounded-lg">
                 <div className="cta__pulse_active dark:bg-green-600"></div>
                 Get started
@@ -228,30 +182,14 @@ const Method = () => {
           <Image 
           width={250}
           height={250}
-          src="/img__french_cafe.jpg"
-          className="footer__img_settings"
-          id="footer__img_1"
-          
-          />
-          <Image 
-          width={250}
-          height={250}
-          src="/img__eiffel_tower.jpg"
+          src="/img__french_cafe_new.jpg"
           className="footer__img_settings "
           id="footer__img_2"
-          
-          />
-          <Image 
-          width={250}
-          height={250}
-          src="/img__french_cafe_2.jpg"
-          id="footer__img_3"
-          
           />
         </div>
       </section>
       </div>
-    </div>
+    </a.div>
   );
 };
 

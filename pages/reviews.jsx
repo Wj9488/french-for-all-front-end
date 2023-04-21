@@ -1,6 +1,7 @@
 import Head from "next/head"
 import Link from "next/link"
 import Image from "next/image"
+import {motion as a} from "framer-motion"
 
 const Reviews = () => {
 
@@ -16,6 +17,10 @@ const Reviews = () => {
     {
       customer: "Mike Leonard",
       review: "Following my retirement in 2016 I decided to take up French language and conversation tuition. Having worked for a French company about fifteen years earlier it had been a requirement to learn business related French. I wanted to expand my conversational abilities as I enjoy visiting France for vacations and wine tasting tours. For about four years I was very happy with the tuition at the local college of further education. However, the course changed, Madame Jones was offering tuition for small classes at her home and seemed to offer a very different style of tuition which very quickly proved to be effective. To begin with we were encouraged to converse on a daily basis between lessons using text messages. This was like having mini lessons every day! Great practice! We continue to learn different ways of expressing ourselves in conversation, not usually covered by the courses at college and more appropriate in every day conversation. Our progress is reviewed regularly in class which is helpful and builds confidence. My vocabulary has increased and the ongoing reviews ensure that you don't simply learn something and leave it but continue to use it and therefore remember it. The range of conversation topics is broad and continues to expand which makes the classes fun and enjoyable. I am still enjoying classes after two years which are informal and friendly. Sometimes it's like meeting with friends and just having a chat, albeit with corrections noted as necessary. I am happy with my progress.",
+    },
+    {
+      customer: "Nicky Huckley",
+      review: "When I first contacted Valérie, I suggested that I simply needed some conversational French practice; How wrong I was! It soon became apparent that I needed a thorough grammatical basis on which to build. Over the past few years, I have enjoyed our lively discussions in French alongside continual learning and revision of vocabulary, phrases and grammer which Valérie provides with great patience, attention to detail and most essential of all, a sense of humour. Valerie teaches her students to speak French as native French-speakers do, semething which has, in my experience, been greatly appreciated and applauded by the French themselves. She encourages immersion into both language and culture, and I have found that listening to the radio and podcasts as well as discussing and reading French novels, has not only provided variety, but increased my interest, enjoyment and confidence. I have no hesitation in recommending Valerie as a tutor to anyone, whatever level they are currently at.",
     },
   ]
 
@@ -63,7 +68,20 @@ const Reviews = () => {
   ]
 
   return (
-    <div>
+    <a.div
+    initial={{
+      opacity: 0,
+      y: 10,
+    }}
+    animate={{
+      opacity: 1,
+      y: 0,
+    }}
+    transition={{
+      duration: .75,
+      ease: "easeOut",
+    }}
+    >
       <Head>
         <title>Testimonials & Reviews - Friendly & experienced native speaker | French For All</title>
         <link rel="shortcut icon" href="/ffa__icon.png"/>
@@ -104,7 +122,7 @@ const Reviews = () => {
                       {testimonial.customer}
                     </p>
                   </div>
-                  <p className="mt-3 text-black dark:text-neutral-200 ">
+                  <p className="mt-3 text-black dark:text-neutral-200 italic">
                     <span>"</span>
                     {testimonial.review}
                     <span>"</span>
@@ -124,7 +142,7 @@ const Reviews = () => {
                       {review.customer}
                     </p>
                   </div>
-                  <p className="mt-3 dark:text-neutral-200">
+                  <p className="mt-3 dark:text-neutral-200 italic">
                     <span>"</span>
                     {review.review}
                     <span>"</span>
@@ -134,13 +152,13 @@ const Reviews = () => {
           </div>
       </section>
 
-      <section className="mt-20 mb-20 flex-row xl:flex justify-between items-center font-semibold">
+      <section className="mt-20 mb-20 flex-row lg:flex justify-between items-center font-semibold">
         <div>
-          <h6 className="dark:text-white text-4xl xl:text-5xl text-center xl:text-left xl:w-10/12">
+          <h6 className="dark:text-white text-4xl xl:text-5xl text-center lg:text-left xl:w-10/12">
             Get the support you need.
           </h6>
           <Link href="/booking">
-            <div className="flex items-center justify-center xl:justify-start xl:justfiy-left">
+            <div className="flex items-center justify-center lg:justify-start lg:justify-left">
               <button className="mt-3 xl:mt-5 font-medium text-white dark:text-black flex items-center gap-2 px-4 py-2 lg:py-2 bg-black dark:bg-white rounded-lg">
                 <div className="cta__pulse_active dark:bg-green-600"></div>
                 Get started
@@ -152,14 +170,6 @@ const Reviews = () => {
           <Image 
           width={250}
           height={250}
-          src="/img__french_cafe.jpg"
-          className="footer__img_settings"
-          id="footer__img_1"
-          
-          />
-          <Image 
-          width={250}
-          height={250}
           src="/img__eiffel_tower.jpg"
           className="footer__img_settings "
           id="footer__img_2"
@@ -168,15 +178,15 @@ const Reviews = () => {
           <Image 
           width={250}
           height={250}
-          src="/img__french_cafe_2.jpg"
+          src="/img__french_bread.jpg"
           id="footer__img_3"
-          
+          className="desktop__view_only"
           />
         </div>
       </section>
 
       </div>
-    </div>
+    </a.div>
   )
 }
 

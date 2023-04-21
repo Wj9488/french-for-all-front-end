@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import {motion as a} from "framer-motion";
 
 export default function Home() {
   const [selected, setSelected] = useState(null);
@@ -18,7 +19,7 @@ export default function Home() {
     {
       question: "Can I do less or more than an hour?",
       answer:
-        "Yes of course, you can choose to do a shorter 45 minute session for £19 or a longer hour and a quarter session for £31.",
+        "Yes of course, you can choose to do a shorter 45 minute session for £23 or a longer hour and a quarter session for £37.",
     },
     // {
     //   question: "?",
@@ -31,14 +32,31 @@ export default function Home() {
         "It is possible to cover a lot in a 1:1 session so I usually recommend one lesson a week. You can book more lessons if you have a specific deadline that you're working towards",
     },
     {
-      question: "I have not enjoyed learning French in the past. I'm worried I won't enjoy 1:1 tuition.",
+      question: "I've found learning French daunting and I'm worried that I won't be able to do it.",
       answer:
-        "A lot of people who come to me have had unsuccessful previous experiences learning French. It is my job to make the lessons enjoyable for you and to help you properly. Read some of my reviews to see what previous students have said.",
+        "A lot of people who come to me have had unsuccessful previous experiences learning French. It is my job to make the lessons enjoyable for you and to help you progress at your own pace... you're not alone in feeling this and I hope you'll read some of the testimonials from my other students.",
+    },
+    {
+      question: "Am I too old to start learning French?",
+      answer:
+        "I've had students from age 5 to in their 80's... learning a language is a wonderful exercise for the brain and you're never too old to start.",
     },
   ];
 
   return ( 
-    <div className="overflow-x-hidden ml-auto mr-auto app__width">
+    <a.div
+      initial={{
+        opacity: 0,
+      }}
+      animate={{
+        opacity: 1,
+      }}
+      transition={{
+        duration: .75,
+        ease: "easeOut",
+      }}
+      className="overflow-x-hidden ml-auto mr-auto app__width"
+    >
       <Head>
         <title>Online French Lessons - Friendly & experienced native speaker | French For All</title>
         <link rel="shortcut icon" href="/ffa__icon.png"/>
@@ -68,19 +86,26 @@ export default function Home() {
       </Head>
 
       <header className="header__height flex items-center justify-center" >
-        <div id="header__bg_img" className="dark:opacity-50"></div>
-        <div className="flex-row xl:flex  xl:flex-center xl:items-center xl:gap-20 z-10">
-          <div className="xl:w-7/12">
+        <a.div 
+        id="header__bg_img" 
+        className="dark:opacity-50"
+        initial={{opacity: 0}}
+        animate={{opacity: 1}}
+        transition={{duration: 1}}
+        >
+        </a.div>
+        <div className="flex-row lg:flex lg:flex-between lg:items-center xl:gap-10 z-10">
+          <div className="lg:w-7/12">
             <div className="font-semibold xl:text-5xl text-4xl xl:w-11/12">
-              <h1 className="dark:text-neutral-200 text-5xl xl:text-5xl 2xl:text-6xl text-center xl:text-left">
+              <h1 className="dark:text-neutral-200 text-4xl sm:text-5xl 2xl:text-6xl text-center lg:text-left">
               French language tuition with a native speaker - personalised lessons for all levels
               </h1>
             </div>
-            <p className="dark:text-neutral-200 mt-5 text-xl text-center xl:text-left">
+            <p className="dark:text-neutral-200 mt-5 text-xl text-center lg:text-left">
               With 25 years of teaching experience, I've helped hundreds of people gain confidence 
               to learn French. 
             </p>
-            <div className="flex items-center gap-5 justify-center xl:justify-start">
+            <div className="flex items-center gap-5 justify-center lg:justify-start">
               <Link href="/booking">
                 <button className="mt-3 xl:mt-5 font-medium text-white dark:text-black flex items-center gap-2 px-4 py-2 lg:py-2 bg-black dark:bg-white rounded-lg">
                   <div className="cta__pulse_active dark:bg-green-600"></div>
@@ -96,11 +121,11 @@ export default function Home() {
           </div>
           <div className="flex items-center justify-center xl:items-center">
             <Image
-              src="/header__image_main.png"
+              src="/header__image_main_nbg.png"
               alt="Valerie Jones - Tutor"
               width={600}
               height={600}
-              className="mt-10 xl:mt-0 rounded-2xl image__settings"
+              className="mt-10 xl:mt-0 image__settings"
             />
           </div>
         </div>
@@ -127,7 +152,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex-row mt-0 lg:mt-20 lg:mb-20 lg:gap-5 xl:gap-0 lg:flex items-start text-center lg:text-left justify-between">
+      <section className="flex-row mt-20 md:mt-0 lg:mt-20 lg:mb-20 lg:gap-5 xl:gap-0 lg:flex items-start text-center lg:text-left justify-between">
         <div className="mb-10 xl:mb-5 lg:w-4/12 xl:w-3/12">
           <div className="flex gap-3 items-center justify-center lg:justify-start">
             <svg
@@ -184,7 +209,7 @@ export default function Home() {
           </div>
           <p className="mt-3 dark:text-neutral-200">
             I understand the struggles of learning French and where most 
-            people go wrong. I'll keep you on the right track and make sure you 
+            people go wrong. I keep you on track and make sure you 
             progress properly at your own pace.
           </p>
         </div>
@@ -204,25 +229,76 @@ export default function Home() {
               <circle cx="14" cy="14" r="3" className="fill-neutral-50" />
             </svg>
             <h2 className="font__quicksand text-2xl font-semibold dark:text-neutral-200">
-              Personalised support
+              Personalised lessons 
             </h2>
           </div>
           <p className="mt-3 dark:text-neutral-200">
             Each lesson is tailored specifically for you and is designed to 
-            give you the tools to enable you to speak and write well.
+            give you the tools to enable you to speak with confidence.
           </p>
         </div>
       </section>
 
+      <section className="mt-20 mb-20 flex-row xl:flex items-center gap-5 justify-between">
+          <div className="bg__ff_blue text-white p-4 xl:w-10/12 xl:min-h-[45vh] 2xl:min-h-[35vh] rounded-2xl xl:mt-0 mt-5">
+            <h2 className="text-3xl 2xl:text-4xl mt-2 mb-5 font-semibold ">
+              Skype / Zoom Lessons
+            </h2>
+            <p className="rounded-xl border border-white mt-2 p-4 xl:p-2">
+                &#10003; Very flexible timing, held over Skype or Zoom 
+                meeting.
+            </p>
+            <p className="rounded-xl border border-white mt-2 p-4 xl:p-2">
+                &#10003; Typically lasts an hour with the option of doing 
+                45 minute sessions.
+            </p>
+            <p className="rounded-xl border border-white mt-2 mb-5 p-4 xl:p-2">
+                &#10003; Pay as you go pricing - you'll only pay for the 
+                lessons that you take with me.
+            </p>
+          </div>
+          <div className="bg-neutral-200 p-4 xl:w-10/12 xl:min-h-[45vh] 2xl:min-h-[35vh] rounded-2xl xl:mt-0 mt-5">
+            <h3 className="text-3xl 2xl:text-4xl mt-2 mb-5 font-semibold ">
+              In person lessons
+            </h3>
+            <p className="rounded-xl border border-black mt-2 p-4 xl:p-2">
+                &#10003; In a quiet & comfortable environment in the countryside. 
+            </p>
+            <p className="rounded-xl border border-black mt-2 p-4 xl:p-2">
+                &#10003; Typically lasts an hour with the option of doing 
+                45 minute sessions. 
+            </p>
+            <p className="rounded-xl border border-black mt-2 mb-5  p-4 xl:p-2">
+                &#10003; Pay as you go pricing - you'll only pay for the 
+                lessons that you take with me. 
+            </p>
+          </div>
+          <div className="bg__ff_red text-white p-4 xl:w-10/12 xl:min-h-[45vh] 2xl:min-h-[35vh] rounded-2xl xl:mt-0 mt-5">
+            <h4 className="text-3xl 2xl:text-4xl mt-2 mb-5 font-semibold ">
+              Whatsapp support
+            </h4>
+            <p className="rounded-xl border border-white mt-2 p-4 xl:p-2">
+                &#10003; Between lessons you'll be able to practive what
+                you've learnt by sending me messages. 
+            </p>
+            <p className="rounded-xl border border-white mt-2 p-4 xl:p-2">
+                &#10003; Your messages will be sent back to you corrected.
+            </p>
+            <p className="rounded-xl border border-white mt-2 mb-5  p-4 xl:p-2">
+                &#10003; This service is <span className="font-semibold">free</span> and is part of your tuition fee.
+            </p>
+          </div>
+        </section>
+
       <section className="flex-row lg:flex items-start gap-10 text-center lg:text-left lg:items-center justify-around">
         <div className="mt-20 mb-20  flex-row xl:flex items-center justify-center xl:justify-between">
           <div className="xl:w-4/12">
-            <h3 className="text-4xl xl:text-5xl font-semibold dark:text-neutral-200">
+            <h3 className="text-3xl xl:text-4xl 2xl:text-5xl font-semibold dark:text-neutral-200">
               About my lessons
             </h3>
             <div className="about__divider_line bg-black dark:bg-white mt-4 mb-2"></div>
             <p className="text-xl dark:text-neutral-200">
-              Join the countless other students that I've helped and improve
+              Join countless other students that I've helped and improve
               your French.
             </p>
             <Link href="/booking">
@@ -258,12 +334,12 @@ export default function Home() {
       </section>
 
       <section className="mb-20 mt-20 landing__gradient dark:opacity-80 rounded-2xl p-4 xl:p-6">
-        <h4 className="text-4xl text-white 2xl:text-5xl font-semibold xl:text-left text-center">
+        <h4 className="text-4xl 2xl:text-5xl font-semibold xl:text-left text-center bg-white dark:bg-neutral-700 dark:text-white p-4 rounded-2xl">
           A few success stories
         </h4>
-        <div className="flex-row xl:flex flex-1 items-center justify-center gap-5 xl:justify-around mt-5 mb-5">
+        <div className="flex-row lg:flex flex-1 items-center justify-center gap-5 lg:justify-around mt-5 mb-5">
         <Link href="/reviews">
-          <div className="bg-neutral-700 xl:min-h-[50vh] min-w-full rounded-2xl p-2 mt-5 xl-mt-0">
+          <div className="hover:scale-105 transition-all bg-neutral-700 lg:min-h-[35vh] xl:min-h-[50vh] min-w-full rounded-2xl p-2 mt-5 xl-mt-0">
             <p className="bg-white p-2 rounded-2xl w-6/12 text-center text-xs">
               Barry Langridge
             </p>
@@ -292,9 +368,9 @@ export default function Home() {
         </Link>
 
         <Link href="/reviews">
-          <div className="bg-neutral-700 xl:min-h-[50vh] min-w-full rounded-2xl p-2 mt-5 xl-mt-0">
-            <p className="bg-white p-2 rounded-2xl w-4/12 text-center text-xs">
-              Penny Massey
+          <div className="hover:scale-105 transition-all bg-neutral-700 lg:min-h-[35vh] xl:min-h-[50vh] min-w-full rounded-2xl p-2 mt-5 xl-mt-0">
+            <p className="bg-white p-2 rounded-2xl w-8/12 text-center text-xs">
+              Penny Massey & Pam Atkinson
             </p>
             <p className="text-white xl:text-xl 2xl:text-2xl mt-5 mb-5">
               "The ambience is friendly and very supportive with a lovely sprinkling of humour.  Valérie is an excellent teacher; very encouraging and patient while gently insisting that mistakes are corrected."
@@ -321,7 +397,7 @@ export default function Home() {
         </Link>
 
         <Link href="/reviews">
-          <div className="bg-neutral-700 xl:min-h-[50vh] min-w-full rounded-2xl p-2 mt-5 xl-mt-0">
+          <div className="hover:scale-105 transition-all bg-neutral-700 lg:min-h-[35vh] xl:min-h-[50vh] min-w-full rounded-2xl p-2 mt-5 xl-mt-0">
             <p className="bg-white p-2 rounded-2xl w-4/12 text-center text-xs">
               Mike Leonard
             </p>
@@ -361,7 +437,7 @@ export default function Home() {
       <section className="flex-row lg:flex items-start justify-between gap-5">
         <div className="text-center xl:text-left xl:w-4/12 dark:opacity-80 pricing__border_box landing__gradient mt-3 lg:mt-0 p-5 rounded-xl flex justify-start items-center xl:justify-center">
           <p className="font-light font__quicksand large__text">
-            £25 <span className="text-xl">/ hour</span>
+            £30 <span className="text-xl">/ hour</span>
           </p>
         </div>
         <div className="pricing__border_box dark:border-neutral-200 mt-5 lg:mt-0 p-5 rounded-xl xl:w-4/12">
@@ -370,7 +446,7 @@ export default function Home() {
           </p>
           <p className="mt-4 dark:text-neutral-200">
             <span className="font-extrabold dark:text-neutral-200">&#10003; </span>
-            Flexible timing
+            Flexible timings
             <br />
             <br />
             <span className="font-extrabold dark:text-neutral-200">&#10003; </span>
@@ -415,7 +491,7 @@ export default function Home() {
       <section className="mb-20 mt-20 gap-5 xl:mt-30 xl:mb-30 flex-row xl:flex items-center xl:items-start justify-between"
       id="contact-me">
         <div className="flex-row">
-          <h5 className="font-semibold text-4xl 2xl:text-5xl text-center xl:text-left mb-5 xl:w-10/12 dark:text-neutral-200">
+          <h5 className="font-semibold text-3xl xl:text-4xl 2xl:text-5xl text-center xl:text-left mb-5 xl:w-10/12 dark:text-neutral-200">
             Got questions?
           </h5>
           <div className="about__divider_line bg-black dark:bg-neutral-200 mb-4 xl:mb-2"></div>
@@ -506,13 +582,13 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="mt-20 mb-20 flex-row xl:flex justify-between items-center font-semibold">
+      <section className="mt-20 mb-20 flex-row lg:flex justify-between items-center font-semibold">
         <div>
-          <h6 className="dark:text-white text-4xl 2xl:text-5xl text-center xl:text-left xl:w-10/12">
+          <h6 className="dark:text-white text-4xl 2xl:text-5xl text-center lg:text-left xl:w-10/12">
             Get the support you need.
           </h6>
           <Link href="/booking">
-            <div className="flex items-center justify-center xl:justify-start xl:justfiy-left">
+            <div className="flex items-center justify-center lg:justify-start lg:justify-left">
               <button className="mt-3 xl:mt-5 font-medium text-white dark:text-black flex items-center gap-2 px-4 py-2 lg:py-2 bg-black dark:bg-white rounded-lg">
                 <div className="cta__pulse_active dark:bg-green-600"></div>
                 Get started
@@ -521,31 +597,24 @@ export default function Home() {
           </Link>
         </div>
         <div className="footer__img_grid gap-5 mt-20 xl:mt-0">
-          <Image 
+          {/* <Image 
           width={250}
           height={250}
-          src="/img__french_cafe.jpg"
+          src="/img__patisserie.jpg"
           className="footer__img_settings"
           id="footer__img_1"
-          
-          />
+          alt="French pastries"
+          /> */}
           <Image 
           width={250}
           height={250}
-          src="/img__eiffel_tower.jpg"
+          src="/img__french_flag.jpg"
           className="footer__img_settings "
           id="footer__img_2"
-          
-          />
-          <Image 
-          width={250}
-          height={250}
-          src="/img__french_cafe_2.jpg"
-          id="footer__img_3"
-          
+          alt="French wine"
           />
         </div>
       </section>
-    </div>
+    </a.div>
   );
 }

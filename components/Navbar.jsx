@@ -19,7 +19,7 @@ const Navbar = () => {
         setCtaText("Call")
       } 
       else {
-        setCtaText("Free call")
+        setCtaText("Free Call")
       }
     }
     handleCtaText()

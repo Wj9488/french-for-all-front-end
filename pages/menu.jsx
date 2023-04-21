@@ -35,7 +35,7 @@ const About = () => {
               Contact 
             </li>
           </Link>
-          <Link href="/sign-up">
+          <Link href="/booking">
             <li className="dark:text-neutral-200 mt-10 font-semibold text-5xl text-center">
               Book a call
             </li>
