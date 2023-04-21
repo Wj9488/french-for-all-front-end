@@ -92,6 +92,7 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: .8 }}
           transition={{ duration: 1 }}
+          className="desktop__view_only"
         ></a.div>
         <div className="flex-row lg:flex lg:flex-between lg:items-center xl:gap-10 z-10">
           <div className="lg:w-7/12">
@@ -122,7 +123,7 @@ export default function Home() {
           <div className="flex items-center justify-center xl:items-center">
             <Image
               src="/header__main_image_v2_nbg.png"
-              alt="Valerie Jones - Tutor"
+              alt="Valerie Jones French Tutor"
               width={600}
               height={600}
               className="mt-10 xl:mt-0 image__settings"

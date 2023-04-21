@@ -72,6 +72,7 @@ const About = () => {
                 className="rounded-full"
                 id="header__img_1"
                 src="/img__french_cafe_new.jpg"
+                alt="A typical french cafe"
               />
             </div>
             
@@ -157,7 +158,7 @@ const About = () => {
           src="/img__eiffel_tower_2.jpg"
           className="footer__img_settings "
           id="footer__img_2"
-          
+          alt="The eiffel tower"
           />
         </div>
       </section>

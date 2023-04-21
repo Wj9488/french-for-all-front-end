@@ -64,6 +64,7 @@ const Method = () => {
                 className="rounded-full"
                 id="header__img_1"
                 src="/img__lavander.jpg"
+                alt="A lavander field in France"
               />
             </div>
             

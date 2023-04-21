@@ -173,7 +173,7 @@ const Reviews = () => {
           src="/img__arc_de_triumph.jpg"
           className="footer__img_settings "
           id="footer__img_2"
-          
+          alt="The Arc de Triomphe"
           />
         </div>
       </section>
