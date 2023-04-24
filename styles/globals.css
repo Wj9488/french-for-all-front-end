@@ -62,9 +62,8 @@ body{
 }
 
 .app__width {
-    margin-left: auto;
-    margin-right: auto;
-    width: 85%;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
 }
 
 /* Gradients  */
@@ -219,7 +218,8 @@ body{
         min-height: 40vh;
     }
     .app__width {
-        width: 92.5%;
+        padding-left: 3.75%;
+        padding-right: 3.75%;
     }
     .pricing__border_box {
         border: 1px solid #000;
@@ -294,7 +294,8 @@ body{
         min-height: 60vh;
     }
     .app__width {
-        width: 95%;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
     }
     .large__text {
         font-size: 120px;
