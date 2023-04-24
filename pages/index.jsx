@@ -355,7 +355,7 @@ export default function Home() {
       <section className="mb-20 mt-20 dark:opacity-80 rounded-2xl">
         <div className="grid lg:grid-cols-3 lg:grid-rows-1 grid-cols-1 grid-rows gap-2 lg:gap-5 mt-5 mb-5">
           <Link href="/reviews">
-            <div className="shadow-lg hover:scale-105 transition-all bg-neutral-200 dark:bg-neutral-700 min-w-full rounded-2xl p-2 xl-mt-0">
+            <div className="mt-5 lg:mt-0 shadow-lg lg:hover:scale-105 transition-all bg-neutral-200 dark:bg-neutral-700 min-w-full rounded-2xl p-2 xl-mt-0">
               <p className="bg-white p-2 rounded-2xl w-6/12 text-center text-xs">
                 Barry Langridge
               </p>
@@ -385,7 +385,7 @@ export default function Home() {
           </Link>
 
           <Link href="/reviews">
-            <div className="shadow-lg hover:scale-105 transition-all bg-neutral-200 dark:bg-neutral-700 min-w-full rounded-2xl p-2 xl-mt-0">
+            <div className="mt-5 lg:mt-0 shadow-lg lg:hover:scale-105 transition-all bg-neutral-200 dark:bg-neutral-700 min-w-full rounded-2xl p-2 xl-mt-0">
               <p className="bg-white p-2 rounded-2xl w-8/12 text-center text-xs">
                 Penny Massey & Pam Atkinson
               </p>
@@ -416,7 +416,7 @@ export default function Home() {
           </Link>
 
           <Link href="/reviews">
-            <div className="shadow-lg hover:scale-105 transition-all bg-neutral-200 dark:bg-neutral-700 min-w-full rounded-2xl p-2 xl-mt-0">
+            <div className="mt-5 lg:mt-0 shadow-lg lg:hover:scale-105 transition-all bg-neutral-200 dark:bg-neutral-700 min-w-full rounded-2xl p-2 xl-mt-0">
               <p className="bg-white p-2 rounded-2xl w-4/12 text-center text-xs">
                 Mike Leonard
               </p>
