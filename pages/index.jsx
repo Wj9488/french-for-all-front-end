@@ -275,8 +275,8 @@ export default function Home() {
             that you take with me.
           </p>
         </div>
-        <div className="border-2 dark:text-white border-neutral-400 dark:border-neutral-200 p-4 xl:w-10/12 xl:min-h-[45vh] 2xl:min-h-[35vh] rounded-2xl xl:mt-0 mt-5">
-          <h3 className="text-neutral-400 text-3xl 2xl:text-4xl mt-2 mb-5 font-semibold ">
+        <div className="border-2 dark:text-white border-neutral-700 dark:border-neutral-200 p-4 xl:w-10/12 xl:min-h-[45vh] 2xl:min-h-[35vh] rounded-2xl xl:mt-0 mt-5">
+          <h3 className="dark:text-neutral-200 text-neutral-700 text-3xl 2xl:text-4xl mt-2 mb-5 font-semibold ">
             In person lessons
           </h3>
           <p className="rounded-xl border border-black dark:border-neutral-200 mt-2 p-4 xl:p-2">
@@ -560,7 +560,7 @@ export default function Home() {
             <input
               type="hidden"
               name="_next"
-              value="https://frenchforall.netlify.app/message-send-success"
+              value="https://french-lesson.com/message-send-success"
             />
             <input
               type="hidden"
