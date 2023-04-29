@@ -22,6 +22,10 @@ const Reviews = () => {
       customer: "Nicky Huckley",
       review: "When I first contacted Valérie, I suggested that I simply needed some conversational French practice; How wrong I was! It soon became apparent that I needed a thorough grammatical basis on which to build. Over the past few years, I have enjoyed our lively discussions in French alongside continual learning and revision of vocabulary, phrases and grammer which Valérie provides with great patience, attention to detail and most essential of all, a sense of humour. Valerie teaches her students to speak French as native French-speakers do, semething which has, in my experience, been greatly appreciated and applauded by the French themselves. She encourages immersion into both language and culture, and I have found that listening to the radio and podcasts as well as discussing and reading French novels, has not only provided variety, but increased my interest, enjoyment and confidence. I have no hesitation in recommending Valerie as a tutor to anyone, whatever level they are currently at.",
     },
+    {
+      customer: "Tracey Harvey",
+      review: " I loved languages at school and studied French and German. I was better at German but I love holidaying in France so found it more useful. I picked it up again because I have always wanted to be fluent in a language and I guess as I am getting older (now 55) I wanted to challenge myself. I have loved my French lessons with Valerie and actually feel like we are friends yet we have never met in person. I just wish I had Valerie as my teacher back at school as I have learnt so much and my confidence in speaking as increased massively. I have surprised myself at how far I have progressed since I have met her.",
+    },
   ]
 
   const customerReviews = [
