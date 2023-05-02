@@ -1,9 +1,11 @@
 import Head from "next/head";
 import Link from "next/link";
 import Image from "next/image";
-import {motion as a} from "framer-motion"
+import {motion as a, makeUseVisualState} from "framer-motion"
+import {useState} from "react"
 
 const Method = () => {
+  const [isLoading, setLoading] = useState(true)
   return (
     <a.div
     initial={{
@@ -61,7 +63,13 @@ const Method = () => {
               <Image
                 width={225}
                 height={225}
-                className="rounded-full"
+                className={(
+                  "duration-700 ease-in-out",
+                  isLoading
+                  ? "bg-neutral-100 dark:bg-neutral-800 rounded-2xl blur-2xl grayscale"
+                  : "bg-transparent dark:bg-transparent blur-0 grayscale-0 rounded-full"
+                )}
+                onLoadingComplete={() => setLoading(false)}
                 id="header__img_1"
                 src="/img__lavander.jpg"
                 alt="A lavander field in France"

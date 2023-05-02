@@ -6,6 +6,7 @@ import { motion as a } from "framer-motion";
 
 export default function Home() {
   const [selected, setSelected] = useState(null);
+  const [isLoading, setLoading] = useState(true)
 
   const toggleFaq = (qIndex) => {
     if (selected == qIndex) {
@@ -128,7 +129,13 @@ export default function Home() {
               alt="Valerie Jones French Tutor"
               width={600}
               height={600}
-              className="mt-10 xl:mt-0 image__settings"
+              className={(
+                "duration-700 ease-in-out image__settings",
+                isLoading
+                ? "bg-neutral-100 dark:bg-neutral-800 rounded-2xl blur-2xl grayscale"
+                : "bg-transparent dark:bg-transparent blur-0 grayscale-0"
+              )}
+              onLoadingComplete={() => setLoading(false)}
             />
           </div>
         </div>
@@ -638,7 +645,13 @@ export default function Home() {
           width={250}
           height={250}
           src="/img__cafe_conversation.jpg"
-          className="footer__img_settings "
+          className={(
+            "duration-700 ease-in-out image__settings",
+            isLoading
+            ? "bg-neutral-100 dark:bg-neutral-800 rounded-2xl blur-2xl grayscale"
+            : "bg-transparent dark:bg-transparent blur-0 grayscale-0"
+          )}
+          onLoadingComplete={() => setLoading(false)}
           id="footer__img_2"
           />
         </div>

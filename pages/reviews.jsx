@@ -2,9 +2,10 @@ import Head from "next/head"
 import Link from "next/link"
 import Image from "next/image"
 import {motion as a} from "framer-motion"
+import {useState} from "react"
 
 const Reviews = () => {
-
+  const [isLoading, setLoading] = useState(true)
   const customerTestimonials = [
     {
       customer: "Barry Langridge",
@@ -175,7 +176,13 @@ const Reviews = () => {
           width={250}
           height={250}
           src="/img__arc_de_triumph.jpg"
-          className="footer__img_settings "
+          className={(
+            "duration-700 ease-in-out footer__img_settings",
+            isLoading
+            ? "bg-neutral-100 dark:bg-neutral-800 rounded-2xl blur-2xl grayscale"
+            : "bg-transparent dark:bg-transparent blur-0 grayscale-0"
+          )}
+          onLoadingComplete={() => setLoading(false)}
           id="footer__img_2"
           alt="The Arc de Triomphe"
           />
