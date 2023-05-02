@@ -123,17 +123,17 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="flex items-center justify-center xl:items-center">
+          <div className="flex items-center justify-center mt-5 lg:mt-0 xl:items-center">
             <Image
               src="/header__main_image_v2_nbg.png"
               alt="Valerie Jones French Tutor"
               width={600}
               height={600}
               className={(
-                "duration-700 ease-in-out image__settings",
+                "duration-700 ease-in-out",
                 isLoading
                 ? "bg-neutral-100 dark:bg-neutral-800 rounded-2xl blur-2xl grayscale"
-                : "bg-transparent dark:bg-transparent blur-0 grayscale-0"
+                : "bg-transparent dark:bg-transparent blur-0 grayscale-0 image__settings"
               )}
               onLoadingComplete={() => setLoading(false)}
             />
