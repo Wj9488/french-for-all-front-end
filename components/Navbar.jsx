@@ -137,7 +137,7 @@ const Navbar = () => {
         </div>
         </ul>
         <anim.div
-        className="text-neutral-100 dark:text-black flex flex-col items-start pl-[5%] justify-center absolute top-[50vh] xsm:top-[65vh] dark:bg-neutral-300 bg-neutral-900 w-[95%]"
+        className="text-neutral-100 dark:text-black flex flex-col items-start pl-[5%] justify-center absolute top-[30vh] xsm:top-[40vh] dark:bg-neutral-300 bg-neutral-900 w-[95%]"
         role="Mobile Navigation Menu"
         variants={menuVariants}
         initial="closed"

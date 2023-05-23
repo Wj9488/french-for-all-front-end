@@ -180,9 +180,7 @@ export default function Home() {
             </h2>
           </div>
           <p className="mt-3 dark:text-neutral-200">
-          Learning a language, especially something as intricate as French, can be daunting. 
-          As your online French tutor, I will be there to help you every step of the way. 
-          Whether you're a beginner or already have a good level of French, I will be there to help you every step of the way.
+            Learning a language can be daunting and I will be there to help you every step of the way.
           </p>
         </div>
 
@@ -226,10 +224,7 @@ export default function Home() {
             </h2>
           </div>
           <p className="mt-3 dark:text-neutral-200">
-          I understand the struggles of learning French and where most people go wrong. With my expert guidance, 
-          I'll keep you on track and make sure you progress properly at your own pace. Whether you're looking for a 
-          French tutor to improve your French or seeking to learn French for business online, 
-          I'm here to guide you.
+            I understand the struggles of learning French and where most people go wrong. I keep you on track and make sure you progress properly at your own pace.
           </p>
         </div>
 
@@ -252,9 +247,7 @@ export default function Home() {
             </h2>
           </div>
           <p className="mt-3 dark:text-neutral-200">
-            Each lesson is tailored specifically for you and is designed to give
-            you the tools to enable you to speak with confidence. With these personalised lessons, you'll learn French 
-            in a way that's most effective for you.
+            Each lesson is tailored specifically for you and is designed to give you the tools to enable you to speak with confidence.
           </p>
         </div>
       </section>
