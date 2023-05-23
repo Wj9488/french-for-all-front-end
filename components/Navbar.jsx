@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import {motion as anim} from "framer-motion"
 
 const Navbar = () => {
 
@@ -29,6 +30,42 @@ const Navbar = () => {
       window.removeEventListener("scroll", resizeNav)
     }
   })
+
+  const [menuOpen, setMenuOpen] = useState(false);
+  function handleMenu() {
+    setMenuOpen(!menuOpen);
+  }
+  function handleMenuClick() {
+    setMenuOpen(false);
+  }
+  const menuVariants = {
+    open: {
+      y: 0,
+      //   borderTopLeftRadius: "10%",
+      //   borderTopRightRadius: "10%",
+      borderRadius: "20px",
+      opacity: 1,
+      zIndex: "10",
+      minHeight: "40vh",
+      transition: {
+        // type: "spring",
+        ease: "easeInOut",
+        stiffness: 50,
+      },
+    },
+    closed: {
+      y: "100%",
+      borderRadius: "40px",
+      opacity: 0,
+      zIndex: "-10",
+      minHeight: "0vh",
+      transition: {
+        // type: "spring",
+        ease: "easeInOut",
+        stiffness: 50,
+      },
+    },
+  };
 
   return (
     // <div className="lg:pt-2">
@@ -64,7 +101,7 @@ const Navbar = () => {
             </svg>
           </Link>
         </div>
-        <ul className="flex items-center justify-between lg:justify-around gap-5">
+        <ul className="flex items-center justify-between lg:justify-around gap-5 mr-2">
           <Link href="/method">
             <li className="desktop__view_only dark:text-white">Method</li>
           </Link>
@@ -84,22 +121,93 @@ const Navbar = () => {
             </div>
           </Link>
 
-          <Link href="/menu">
-            <div aria-label="Toggle Menu" className="mobile__display_only">
-              <svg
-                width="28"
-                height="15"
-                viewBox="0 0 28 15"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect className="fill-black dark:fill-white" width="28" height="2.5" rx="1.25" />
-                <rect className="fill-black dark:fill-white" y="6" width="28" height="2.5" rx="1.25" />
-                <rect className="fill-black dark:fill-white" y="12" width="28" height="2.5" rx="1.25" />
-              </svg>
-            </div>
-          </Link>
+          <div
+          className="text-xl mobile__display_only hover:cursor-pointer"
+          role="Menu toggle"
+          onClick={handleMenu}
+        >
+          <span className="sr-only sr-only-focusable">
+            Click to toggle navigation menu
+          </span>
+          {menuOpen ? (
+            <span className="text-4xl dark:text-neutral-200">&#215;</span>
+          ) : (
+            <span className="text-2xl dark:text-neutral-200">&#9776;</span>
+          )}
+        </div>
         </ul>
+        <anim.div
+        className="text-neutral-100 dark:text-black flex flex-col items-start pl-[5%] justify-center absolute top-[50vh] xsm:top-[65vh] dark:bg-neutral-300 bg-neutral-900 w-[95%]"
+        role="Mobile Navigation Menu"
+        variants={menuVariants}
+        initial="closed"
+        animate={menuOpen ? "open" : "closed"}
+      >
+        {menuOpen && (
+          <div>
+            <ul>
+              <anim.li
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.1 }}
+                onClick={handleMenuClick}
+                className="mt-5 text-4xl"
+              >
+                <Link href="/">
+                  Home &#8594;
+                </Link>
+              </anim.li>
+              <anim.li
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.2 }}
+                onClick={handleMenuClick}
+                className="mt-5 text-4xl"
+              >
+                <Link href="/method">
+                  Teaching Method &#8594;
+                </Link>
+              </anim.li>
+              <anim.li
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.3 }}
+                onClick={handleMenuClick}
+                className="mt-5 text-4xl"
+              >
+                <Link href="/reviews">Reviews &#8594;</Link>
+              </anim.li>
+              <anim.li
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.4 }}
+                onClick={handleMenuClick}
+                className="mt-5 mb-5 text-4xl"
+              >
+                <Link href="/about">About me &#8594;</Link>
+              </anim.li>
+              <anim.li
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.5 }}
+                onClick={handleMenuClick}
+                className="mt-5 mb-5 text-4xl"
+              >
+                <Link href="/#contact-me">Contact &#8594;</Link>
+              </anim.li>
+              <anim.li
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ delay: 0.6 }}
+                onClick={handleMenuClick}
+                className="mt-5 mb-5 text-4xl"
+              >
+                <Link href="/booking">Book a call &#8594;</Link>
+              </anim.li>
+            </ul>
+          </div>
+        )}
+      </anim.div>
       </nav>
     // </div>
   );

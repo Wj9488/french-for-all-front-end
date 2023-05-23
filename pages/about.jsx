@@ -3,24 +3,12 @@ import Link from "next/link"
 import Image from "next/image"
 import {motion as a} from "framer-motion"
 import { useState } from "react"
+import Transition from "@/components/Transition"
 
 const About = () => {
   const [isLoading, setLoading] = useState(true)
   return (
-    <a.div
-    initial={{
-      opacity: 0,
-      y: 10,
-    }}
-    animate={{
-      opacity: 1,
-      y: 0,
-    }}
-    transition={{
-      duration: .75,
-      ease: "easeOut",
-    }}
-    >
+    <Transition>
       <Head>
         <title>About me - Friendly & experienced native speaker | French For All</title>
         <link rel="shortcut icon" href="/ffa__icon.png"/>
@@ -172,7 +160,7 @@ const About = () => {
       </section>
       
       </div>
-    </a.div>
+    </Transition>
   )
 }
 

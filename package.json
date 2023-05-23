@@ -6,12 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "sitemap": "next-sitemap"
   },
   "dependencies": {
     "@bradgarropy/next-google-analytics": "^1.0.2",
     "framer-motion": "^10.12.4",
     "next": "13.2.4",
+    "next-sitemap": "^4.1.3",
     "react": "18.2.0",
     "react-calendly": "^4.1.1",
     "react-dom": "18.2.0"

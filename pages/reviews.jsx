@@ -3,6 +3,7 @@ import Link from "next/link"
 import Image from "next/image"
 import {motion as a} from "framer-motion"
 import {useState} from "react"
+import Transition from "@/components/Transition"
 
 const Reviews = () => {
   const [isLoading, setLoading] = useState(true)
@@ -73,20 +74,7 @@ const Reviews = () => {
   ]
 
   return (
-    <a.div
-    initial={{
-      opacity: 0,
-      y: 10,
-    }}
-    animate={{
-      opacity: 1,
-      y: 0,
-    }}
-    transition={{
-      duration: .75,
-      ease: "easeOut",
-    }}
-    >
+    <Transition>
       <Head>
         <title>Testimonials & Reviews - Friendly & experienced native speaker | French For All</title>
         <link rel="shortcut icon" href="/ffa__icon.png"/>
@@ -112,7 +100,7 @@ const Reviews = () => {
          french lesson, french online lessons, french classes near me, learn french online, french for all"
         />
       </Head>
-      <div className="ml-auto mr-auto app__width">
+      <div className="">
 
       <section className="mt-20 mb-20 xl:mt-20 small__section_height">
         <h1 className="mb-20 text-center dark:text-neutral-200 font__quicksand font-semibold text-4xl xl:text-5xl">
@@ -190,7 +178,7 @@ const Reviews = () => {
       </section>
 
       </div>
-    </a.div>
+    </Transition>
   )
 }
 

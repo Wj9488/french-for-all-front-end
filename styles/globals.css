@@ -13,11 +13,11 @@ body{
     background: #fafafa;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     body {
       background: #171717;
     }
-  }
+  } */
 
 /* App theme colours */
 .bg__ff_blue {

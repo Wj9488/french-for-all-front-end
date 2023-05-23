@@ -1,23 +1,11 @@
 import Head from "next/head"
 import { InlineWidget } from "react-calendly";
 import {motion as a} from "framer-motion"
+import Transition from "@/components/Transition";
 
 const Signup = () => {
   return (
-    <a.div
-    initial={{
-      opacity: 0,
-      y: 10,
-    }}
-    animate={{
-      opacity: 1,
-      y: 0,
-    }}
-    transition={{
-      duration: .75,
-      ease: "easeOut",
-    }}
-    >
+    <Transition>
       <Head>
         <title>Book your free call - Friendly & experienced native speaker | French For All</title>
         <link rel="shortcut icon" href="/ffa__icon.png"/>
@@ -52,7 +40,7 @@ const Signup = () => {
             <InlineWidget url="https://calendly.com/frenchforall/introductory-phone-call"/>
         </div>  
       </div>
-    </a.div>
+    </Transition>
   )
 }
 

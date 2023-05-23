@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { motion as a } from "framer-motion";
+import Transition from "@/components/Transition";
 
 export default function Home() {
   const [selected, setSelected] = useState(null);
@@ -46,21 +47,7 @@ export default function Home() {
   ];
 
   return (
-    <a.div
-      initial={{
-        opacity: 0,
-        y: 10,
-      }}
-      animate={{
-        opacity: 1,
-        y: 0,
-      }}
-      transition={{
-        duration: 0.75,
-        ease: "easeOut",
-      }}
-      className="overflow-x-hidden ml-auto mr-auto app__width"
-    >
+    <Transition>
       <Head>
         <title>
           Online French Lessons - Friendly & experienced native speaker | French
@@ -85,7 +72,11 @@ export default function Home() {
         <meta
           name="keywords"
           content="french lessons, online french lessons, french lessons near me, french lessons london, french lessons sussex, 
-         french lesson, french online lessons, french classes near me, learn french online, french for all"
+          french lesson, french online lessons, french classes near me, learn french online, french for all, online French tutor, 
+          French language course online, French language tutor, French language learning online, French conversation lessons online, 
+          beginner French lessons online, advanced French lessons online, French language training online, French language classes online, 
+          French for beginners online, French for business online, French language skills online, French language school online, 
+          French language teacher online, French language learning resources, French language learning apps, French language learning tips"
         />
       </Head>
 
@@ -101,7 +92,7 @@ export default function Home() {
           <div className="lg:w-7/12">
             <div className="font-semibold xl:text-5xl text-4xl xl:w-11/12">
               <h1 className="dark:text-neutral-200 text-4xl sm:text-5xl 2xl:text-6xl text-center lg:text-left">
-                French language tuition with a native speaker - personalised
+                Online French tuition with a native speaker - personalised
                 lessons for all levels
               </h1>
             </div>
@@ -189,8 +180,9 @@ export default function Home() {
             </h2>
           </div>
           <p className="mt-3 dark:text-neutral-200">
-            Learning a language can be daunting and I will be there to help you
-            every step of the way.
+          Learning a language, especially something as intricate as French, can be daunting. 
+          As your online French tutor, I will be there to help you every step of the way. 
+          Whether you're a beginner or already have a good level of French, I will be there to help you every step of the way.
           </p>
         </div>
 
@@ -234,9 +226,10 @@ export default function Home() {
             </h2>
           </div>
           <p className="mt-3 dark:text-neutral-200">
-            I understand the struggles of learning French and where most people
-            go wrong. I keep you on track and make sure you progress properly at
-            your own pace.
+          I understand the struggles of learning French and where most people go wrong. With my expert guidance, 
+          I'll keep you on track and make sure you progress properly at your own pace. Whether you're looking for a 
+          French tutor to improve your French or seeking to learn French for business online, 
+          I'm here to guide you.
           </p>
         </div>
 
@@ -260,7 +253,8 @@ export default function Home() {
           </div>
           <p className="mt-3 dark:text-neutral-200">
             Each lesson is tailored specifically for you and is designed to give
-            you the tools to enable you to speak with confidence.
+            you the tools to enable you to speak with confidence. With these personalised lessons, you'll learn French 
+            in a way that's most effective for you.
           </p>
         </div>
       </section>
@@ -268,7 +262,7 @@ export default function Home() {
       <section className="mt-20 mb-20 flex-row xl:flex items-center gap-5 justify-between">
         <div className="border-2 dark:text-white border-blue-500 p-4 xl:w-10/12 xl:min-h-[45vh] 2xl:min-h-[35vh] rounded-2xl xl:mt-0 mt-5">
           <h2 className="text-blue-500 text-3xl 2xl:text-4xl mt-2 mb-5 font-semibold ">
-            Skype / Zoom Lessons
+            Skype Lessons
           </h2>
           <p className="rounded-xl border border-neutral-900 dark:border-neutral-200 mt-2 p-4 xl:p-2">
             &#10003; Very flexible timing, held over Skype or Zoom meeting.
@@ -656,6 +650,6 @@ export default function Home() {
           />
         </div>
       </section>
-    </a.div>
+    </Transition>
   );
 }
