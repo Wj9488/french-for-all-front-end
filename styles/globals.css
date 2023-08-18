@@ -40,10 +40,12 @@ body{
 
 
 .nav__height {
-    min-height: 9vh;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
 }
 .compacted__nav{
-    min-height: 7vh;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
 }
 
 .cta__pulse_active {
@@ -57,7 +59,7 @@ body{
     position: sticky;
     top: 0;
     backdrop-filter: blur(20px);
-    background: rgb(229, 229, 229, 0.7);
+    /* background: rgb(229, 229, 229, 0.7); */
     z-index: 999;
 }
 

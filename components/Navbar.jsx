@@ -103,16 +103,16 @@ const Navbar = () => {
         </div>
         <ul className="flex items-center justify-between lg:justify-around gap-5 mr-2">
           <Link href="/method">
-            <li className="desktop__view_only dark:text-white">Method</li>
+            <li className="hover:opacity-80 transition-all duration-100 desktop__view_only dark:text-white">Method</li>
           </Link>
           <Link href="/reviews">
-            <li className="desktop__view_only dark:text-white">Reviews</li>
+            <li className="hover:opacity-80 transition-all duration-100 desktop__view_only dark:text-white">Reviews</li>
           </Link>
           <Link href="/about">
-            <li className="desktop__view_only dark:text-white">About</li>
+            <li className="hover:opacity-80 transition-all duration-100 desktop__view_only dark:text-white">About</li>
           </Link>
           <Link href="/#contact-me">
-            <li className="desktop__view_only dark:text-white">Contact</li>
+            <li className="hover:opacity-80 transition-all duration-100 desktop__view_only dark:text-white">Contact</li>
           </Link>
           <Link href="/booking">
             <div className="extra__small_none flex items-center gap-2 px-2 py-2 lg:py-1 2xl:py-2 dark:bg-white bg-black rounded-lg">
