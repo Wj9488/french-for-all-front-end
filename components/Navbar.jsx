@@ -46,7 +46,7 @@ const Navbar = () => {
       borderRadius: "20px",
       opacity: 1,
       zIndex: "10",
-      minHeight: "40vh",
+      // minHeight: "40vh",
       transition: {
         // type: "spring",
         ease: "easeInOut",
@@ -137,7 +137,7 @@ const Navbar = () => {
         </div>
         </ul>
         <anim.div
-        className="text-neutral-100 dark:text-black flex flex-col items-start pl-[5%] justify-center absolute top-[30vh] xsm:top-[40vh] dark:bg-neutral-300 bg-neutral-900 w-[95%]"
+        className="border border-neutral-900 flex flex-col items-start pl-[5%] justify-center absolute top-[7.5vh] xsm:top-[40vh] dark:bg-neutral-300 w-[95%] bg-[#fafafa]"
         role="Mobile Navigation Menu"
         variants={menuVariants}
         initial="closed"
@@ -151,10 +151,10 @@ const Navbar = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.1 }}
                 onClick={handleMenuClick}
-                className="mt-5 text-4xl"
+                className="mt-5 text-2xl"
               >
                 <Link href="/">
-                  Home &#8594;
+                  Home 
                 </Link>
               </anim.li>
               <anim.li
@@ -162,10 +162,10 @@ const Navbar = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.2 }}
                 onClick={handleMenuClick}
-                className="mt-5 text-4xl"
+                className="mt-5 text-2xl"
               >
                 <Link href="/method">
-                  Teaching Method &#8594;
+                  Teaching Method 
                 </Link>
               </anim.li>
               <anim.li
@@ -173,36 +173,36 @@ const Navbar = () => {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.3 }}
                 onClick={handleMenuClick}
-                className="mt-5 text-4xl"
+                className="mt-5 text-2xl"
               >
-                <Link href="/reviews">Reviews &#8594;</Link>
+                <Link href="/reviews">Reviews </Link>
               </anim.li>
               <anim.li
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.4 }}
                 onClick={handleMenuClick}
-                className="mt-5 mb-5 text-4xl"
+                className="mt-5 mb-5 text-2xl"
               >
-                <Link href="/about">About me &#8594;</Link>
+                <Link href="/about">About me </Link>
               </anim.li>
               <anim.li
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.5 }}
                 onClick={handleMenuClick}
-                className="mt-5 mb-5 text-4xl"
+                className="mt-5 mb-5 text-2xl"
               >
-                <Link href="/#contact-me">Contact &#8594;</Link>
+                <Link href="/#contact-me">Contact </Link>
               </anim.li>
               <anim.li
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ delay: 0.6 }}
                 onClick={handleMenuClick}
-                className="mt-5 mb-5 text-4xl"
+                className="mt-5 mb-5 text-2xl"
               >
-                <Link href="/booking">Book a call &#8594;</Link>
+                <Link href="/booking">Book a call </Link>
               </anim.li>
             </ul>
           </div>
