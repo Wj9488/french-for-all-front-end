@@ -115,7 +115,7 @@ const Navbar = () => {
             <li className="hover:opacity-80 transition-all duration-100 desktop__view_only dark:text-white">Contact</li>
           </Link>
           <Link href="/booking">
-            <div className="extra__small_none flex items-center gap-2 px-2 py-2 lg:py-1 2xl:py-2 dark:bg-white bg-black rounded-lg">
+            <div className="extra__small_none flex items-center gap-1 px-2 py-2 lg:py-1 2xl:py-2 dark:bg-white bg-black rounded-lg">
               <div className="cta__pulse_active dark:bg-green-600"></div>
               <li className="lg:text-base text-sm text-white dark:text-black">{ctaText}</li>
             </div>

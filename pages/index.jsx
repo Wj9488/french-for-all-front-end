@@ -90,8 +90,8 @@ export default function Home() {
         ></a.div>
         <div className="flex-row lg:flex lg:flex-between lg:items-center xl:gap-10 z-10">
           <div className="lg:w-7/12">
-            <div className="font-semibold xl:text-5xl text-4xl xl:w-11/12">
-              <h1 className="dark:text-neutral-200 text-4xl sm:text-5xl 2xl:text-6xl text-center lg:text-left w-[90%] mx-auto">
+            <div className="font-semibold xl:text-5xl text-4xl xl:w-12/12">
+              <h1 className="dark:text-neutral-200 text-4xl sm:text-5xl 2xl:text-6xl text-center lg:text-left w-[90%] mx-auto lg:w-12/12 lg:mx-0">
                 Online French tuition with a native speaker - personalised
                 lessons for all levels
               </h1>
