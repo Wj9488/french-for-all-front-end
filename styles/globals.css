@@ -102,9 +102,10 @@ body{
     min-height: 80vh;
 }
 .header__height {
-    min-height: 80vh;
+    min-height: 70vh;
 }
 #header__bg_img {
+    z-index: -10;
     overflow-x: hidden;
     position: absolute;
     top: 50;

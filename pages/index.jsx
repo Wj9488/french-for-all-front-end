@@ -86,21 +86,21 @@ export default function Home() {
           initial={{ opacity: 0 }}
           animate={{ opacity: .8 }}
           transition={{ duration: 1, delay: .75 }}
-          className="desktop__view_only"
+          className=""
         ></a.div>
         <div className="flex-row lg:flex lg:flex-between lg:items-center xl:gap-10 z-10">
           <div className="lg:w-7/12">
             <div className="font-semibold xl:text-5xl text-4xl xl:w-12/12">
-              <h1 className="dark:text-neutral-200 text-4xl sm:text-5xl 2xl:text-6xl text-center lg:text-left w-[90%] mx-auto lg:w-12/12 lg:mx-0">
+              <h1 className="dark:text-neutral-200 leading-10 text-4xl sm:text-5xl 2xl:text-6xl lg:text-left mx-auto lg:w-12/12 lg:mx-0">
                 Online French tuition with a native speaker - personalised
                 lessons for all levels
               </h1>
             </div>
-            <p className="dark:text-neutral-200 mt-5 text-xl text-center lg:text-left">
+            <p className="dark:text-neutral-200 mt-5 text-xl lg:text-left">
               With 25 years of teaching experience, I've helped hundreds of
               people gain confidence to learn French.
             </p>
-            <div className="flex items-center gap-5 justify-center lg:justify-start">
+            <div className="flex gap-5 justify-start lg:justify-start">
               <Link href="/booking">
                 <button className="mt-3 xl:mt-5 font-medium text-white dark:text-black flex items-center gap-2 px-4 py-2 lg:py-2 bg-black dark:bg-white rounded-lg">
                   <div className="cta__pulse_active dark:bg-green-600"></div>
