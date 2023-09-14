@@ -80,7 +80,7 @@ export default function Home() {
         />
       </Head>
 
-      <header className="header__height flex items-center justify-center">
+      <header className="min-h-[70vh] lg:min-h-[80vh] flex items-center justify-center">
         <a.div
           id="header__bg_img"
           initial={{ opacity: 0 }}
@@ -108,7 +108,7 @@ export default function Home() {
                 </button>
               </Link>
               <Link href="/method">
-                <button className="bg-neutral-200 dark:bg-neutral-700 dark:text-white py-2 px-4 hover:bg-neutral-300 dark:hover:bg-neutral-600 rounded xl:mt-5 mt-3 font-medium">
+                <button className="bg-neutral-100 dark:bg-neutral-700 dark:text-white py-2 px-4 hover:bg-neutral-300 dark:hover:bg-neutral-600 rounded xl:mt-5 mt-3 font-medium">
                   Find out how &#8594;
                 </button>
               </Link>
@@ -349,7 +349,7 @@ export default function Home() {
       <section className="mb-20 mt-20 dark:opacity-80 rounded-2xl">
         <div className="grid lg:grid-cols-3 lg:grid-rows-1 grid-cols-1 grid-rows gap-2 lg:gap-5 mt-5 mb-5">
           <Link href="/reviews">
-            <div className="mt-5 lg:mt-0 shadow-lg lg:hover:scale-105 transition-all bg-neutral-200 dark:bg-neutral-700 min-w-full rounded-2xl p-2 xl-mt-0">
+            <div className="mt-5 lg:mt-0 shadow-lg lg:hover:scale-105 transition-all bg-neutral-100 dark:bg-neutral-700 min-w-full rounded-2xl p-2 xl-mt-0">
               <p className="bg-white p-2 rounded-2xl w-6/12 text-center text-xs">
                 Barry Langridge
               </p>
@@ -359,7 +359,7 @@ export default function Home() {
                 clear-eyed about weaknesses"
               </p>
               <div></div>
-              <div className="flex items-center justify-between mt-5 xl:mt-3 bg-neutral-200 dark:bg-neutral-700 p-2">
+              <div className="flex items-center justify-between mt-5 xl:mt-3 bg-neutral-100 dark:bg-neutral-700 p-2">
                 <p className="dark:text-white">Read testimonial</p>
                 <svg
                   width="26"
@@ -379,7 +379,7 @@ export default function Home() {
           </Link>
 
           <Link href="/reviews">
-            <div className="mt-5 lg:mt-0 shadow-lg lg:hover:scale-105 transition-all bg-neutral-200 dark:bg-neutral-700 min-w-full rounded-2xl p-2 xl-mt-0">
+            <div className="mt-5 lg:mt-0 shadow-lg lg:hover:scale-105 transition-all bg-neutral-100 dark:bg-neutral-700 min-w-full rounded-2xl p-2 xl-mt-0">
               <p className="bg-white p-2 rounded-2xl w-8/12 text-center text-xs">
                 Penny Massey & Pam Atkinson
               </p>
@@ -390,7 +390,7 @@ export default function Home() {
                 corrected."
               </p>
               <div></div>
-              <div className="flex items-center justify-between mt-5 xl:mt-3 bg-neutral-200 dark:bg-neutral-700 p-2">
+              <div className="flex items-center justify-between mt-5 xl:mt-3 bg-neutral-100 dark:bg-neutral-700 p-2">
                 <p className="dark:text-white">Read testimonial</p>
                 <svg
                   width="26"
@@ -410,7 +410,7 @@ export default function Home() {
           </Link>
 
           <Link href="/reviews">
-            <div className="mt-5 lg:mt-0 shadow-lg lg:hover:scale-105 transition-all bg-neutral-200 dark:bg-neutral-700 min-w-full rounded-2xl p-2 xl-mt-0">
+            <div className="mt-5 lg:mt-0 shadow-lg lg:hover:scale-105 transition-all bg-neutral-100 dark:bg-neutral-700 min-w-full rounded-2xl p-2 xl-mt-0">
               <p className="bg-white p-2 rounded-2xl w-4/12 text-center text-xs">
                 Mike Leonard
               </p>
@@ -421,7 +421,7 @@ export default function Home() {
                 and leave it but continue to use it and therefore remember it."
               </p>
               <div></div>
-              <div className="flex items-center justify-between mt-5 xl:mt-3 bg-neutral-200 dark:bg-neutral-700 p-2">
+              <div className="flex items-center justify-between mt-5 xl:mt-3 bg-neutral-100 dark:bg-neutral-700 p-2">
                 <p className="dark:text-white">Read testimonial</p>
                 <svg
                   width="26"
@@ -500,7 +500,7 @@ export default function Home() {
           </button>
         </Link>
         <Link href="/method">
-          <button className="bg-neutral-200 dark:bg-neutral-700 dark:text-white py-2 px-4 hover:bg-neutral-300 dark:hover:bg-neutral-600 rounded xl:mt-5 mt-3 font-medium">
+          <button className="bg-neutral-100 dark:bg-neutral-700 dark:text-white py-2 px-4 hover:bg-neutral-300 dark:hover:bg-neutral-600 rounded xl:mt-5 mt-3 font-medium">
             Find out more &#8594;
           </button>
         </Link>
@@ -514,7 +514,7 @@ export default function Home() {
           <h5 className="font-semibold text-3xl xl:text-4xl 2xl:text-5xl text-center xl:text-left mb-5 xl:w-10/12 dark:text-neutral-200">
             Got questions?
           </h5>
-          <div className="about__divider_line bg-black dark:bg-neutral-200 mb-4 xl:mb-2"></div>
+          <div className="about__divider_line bg-black dark:bg-neutral-100 mb-4 xl:mb-2"></div>
           <p className="text-center text-xl xl:text-base xl:text-left dark:text-neutral-200">
             If you've got a more specific question you can send me a message
             directly using the contact form.
@@ -524,7 +524,7 @@ export default function Home() {
           {faqData.map((item, qIndex) => (
             <div className="mt-4 xl:mt-3">
               <div
-                className="flex items-center justify-between hover:cursor-pointer bg-neutral-200 dark:bg-neutral-700 hover:bg-neutral-300 dark:hover:bg-neutral-600 rounded-xl py-3 px-4"
+                className="flex items-center justify-between hover:cursor-pointer bg-neutral-100 dark:bg-neutral-700 hover:bg-neutral-300 dark:hover:bg-neutral-600 rounded-xl py-3 px-4"
                 onClick={() => toggleFaq(qIndex)}
               >
                 <p className="font-medium dark:text-neutral-200">
