@@ -75,7 +75,7 @@ body{
 }
 .landing__gradient_reducedOpacity {
     background: whitesmoke;
-    border: 1px solid #3a3a3a;
+    /* border: 1px solid #3a3a3a; */
 }
 
 /* Gradients END */

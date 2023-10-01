@@ -134,7 +134,7 @@ const Method = () => {
         </div>
       </section>
 
-      <section className="mt-20 mb-20 bg-neutral-600 rounded-2xl dark:bg-neutral-700 p-4">
+      <section className="mt-20 mb-20 bg-red-400 rounded-2xl dark:bg-neutral-700 p-4">
         <div className="flex-row items-center justify-center">
           <p className="landing__gradient_reducedOpacity p-2 rounded-2xl ml-auto mr-auto w-5/12 xl:w-2/12 text-center text-sm mb-3 mt-3">
               Nicky Huckley

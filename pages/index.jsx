@@ -88,7 +88,7 @@ export default function Home() {
           transition={{ duration: 1, delay: .75 }}
           className=""
         ></a.div>
-        <div className="flex-row lg:flex lg:flex-between lg:items-center xl:gap-10 z-10 mt-20">
+        <div className="flex-row lg:flex lg:flex-between lg:items-center xl:gap-10 z-10 mt-20 lg:mt-5">
           <div className="lg:w-7/12">
             <div className="font-semibold xl:text-5xl text-4xl xl:w-12/12">
               <h1 className="dark:text-neutral-200 leading-10 text-4xl sm:text-5xl 2xl:text-6xl lg:text-left mx-auto lg:w-12/12 lg:mx-0">
@@ -524,7 +524,7 @@ export default function Home() {
           {faqData.map((item, qIndex) => (
             <div className="mt-4 xl:mt-3">
               <div
-                className="flex items-center justify-between hover:cursor-pointer bg-neutral-100 dark:bg-neutral-700 hover:bg-neutral-300 dark:hover:bg-neutral-600 rounded-xl py-3 px-4"
+                className="flex items-center justify-between hover:cursor-pointer bg-neutral-100 shadow dark:bg-neutral-700 hover:bg-neutral-300 dark:hover:bg-neutral-600 rounded-xl py-3 px-4"
                 onClick={() => toggleFaq(qIndex)}
               >
                 <p className="font-medium dark:text-neutral-200">
@@ -571,7 +571,7 @@ export default function Home() {
                   placeholder="Your name..."
                   name="name"
                   required
-                  className="p-4 dark:text-neutral-200 bg-neutral-100 dark:bg-neutral-800 rounded-2xl w-full mb-5"
+                  className="p-4 dark:text-neutral-200 bg-neutral-100 shadow dark:bg-neutral-800 rounded-2xl w-full mb-5"
                 />
               </div>
               <div className="w-6/12">
@@ -583,7 +583,7 @@ export default function Home() {
                   placeholder="email@example.com"
                   name="email"
                   required
-                  className="p-4 dark:text-neutral-200 bg-neutral-100 dark:bg-neutral-800 rounded-2xl w-full mb-5"
+                  className="p-4 dark:text-neutral-200 bg-neutral-100 shadow dark:bg-neutral-800 rounded-2xl w-full mb-5"
                 />
               </div>
             </div>
@@ -598,13 +598,13 @@ export default function Home() {
                 rows="4"
                 placeholder="Your question..."
                 required
-                className="p-4 dark:text-neutral-200 bg-neutral-100 dark:bg-neutral-800 rounded-2xl w-full"
+                className="p-4 dark:text-neutral-200 bg-neutral-100 shadow dark:bg-neutral-800 rounded-2xl w-full"
               ></textarea>
             </div>
             <div className="flex items-center justify-center xl:justify-start">
               <button
                 type="submit"
-                className="mt-5 bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-2xl"
+                className="mt-5 bg-black dark:bg-white text-white dark:text-black px-4 py-2 rounded-lg"
               >
                 Send message &#8594;
               </button>
