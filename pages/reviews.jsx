@@ -111,7 +111,7 @@ const Reviews = () => {
               {customerTestimonials.map((testimonial) => (
                 <div className="mt-5 bg-neutral-100 dark:bg-neutral-700 p-4 rounded-lg shadow-lg">
                   <div className="flex gap-5 items-center">
-                    <p className="landing__gradient_reducedOpacity p-2 rounded-2xl w-5/12 text-center text-sm">
+                    <p className="font-bold">
                       {testimonial.customer}
                     </p>
                   </div>
