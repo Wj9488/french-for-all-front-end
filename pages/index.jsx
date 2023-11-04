@@ -96,11 +96,11 @@ export default function Home() {
                 lessons for all levels
               </h1>
             </div>
-            <p className="dark:text-neutral-200 mt-5 text-xl lg:text-left">
+            <p className="dark:text-neutral-200 mt-6 text-xl lg:text-left">
               With 25 years of teaching experience, I've helped hundreds of
               people gain confidence to learn French.
             </p>
-            <div className="flex gap-5 justify-start lg:justify-start">
+            <div className="flex gap-5 mt-5 justify-start lg:justify-start">
               <Link href="/booking">
                 <button className="mt-3 xl:mt-5 font-medium text-white dark:text-black flex items-center gap-2 px-4 py-2 lg:py-2 bg-black dark:bg-white rounded-lg">
                   <div className="cta__pulse_active dark:bg-green-600"></div>
@@ -114,7 +114,7 @@ export default function Home() {
               </Link>
             </div>
           </div>
-          <div className="flex items-center justify-center mt-5 lg:mt-0 xl:items-center">
+          <div className="flex items-center justify-center mt-10 lg:mt-0 xl:items-center">
             <Image
               src="/header__main_image_v2_nbg.png"
               alt="Valerie Jones French Tutor"

@@ -109,6 +109,11 @@ body{
 
 /* Height setters */
 
+.about__page_header_image {
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
 .section__height {
     min-height: 80vh;
 }

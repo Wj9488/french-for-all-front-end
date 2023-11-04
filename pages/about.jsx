@@ -46,7 +46,7 @@ const About = () => {
               /> */}
             </div>
             
-            <div className="flex-row xl:w-6/12 mb-20 xl:mb-0">
+            <div className="flex-row xl:w-6/12 mb-20 xl:mb-0 gap-5">
               <h1 className="font__quicksand xl:text-5xl text-4xl font-semibold text-center lg:text-left dark:text-neutral-200">
                 About me
               </h1>
@@ -57,8 +57,8 @@ const About = () => {
 
             <div className="flex items-center justify-center xl:justify-start xl:items-start">
               <Image
-                width={225}
-                height={225}
+                width={425}
+                height={425}
                 className="rounded-full"
                 id="header__img_1"
                 src="/img__french_cafe_new.jpg"
