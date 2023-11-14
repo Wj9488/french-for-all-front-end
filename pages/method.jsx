@@ -3,8 +3,11 @@ import Link from "next/link";
 import Image from "next/image";
 import {useState} from "react"
 import Transition from "@/components/Transition";
+import { useScroll, useTransform, motion as a } from "framer-motion";
 
 const Method = () => {
+  const { scrollYProgress } = useScroll();
+  const scale = useTransform(scrollYProgress, [0, 1], [1.0, 1.5]);
   const [isLoading, setLoading] = useState(true)
   return (
     <Transition>
@@ -46,21 +49,20 @@ const Method = () => {
               </p>
             </div>
 
-            <div className="flex items-center justify-center xl:justify-start xl:items-start">
-              <Image
-                width={525}
-                height={525}
-                className={(
-                  "duration-700 ease-in-out",
-                  isLoading
-                  ? "bg-neutral-100 dark:bg-neutral-800 rounded-2xl blur-2xl grayscale"
-                  : "bg-transparent dark:bg-transparent blur-0 grayscale-0 rounded-full"
-                )}
-                onLoadingComplete={() => setLoading(false)}
-                id="header__img_1"
-                src="/img__lavander.jpg"
-                alt="A lavander field in France"
-              />
+            <div className="flex items-center justify-center xl:justify-start xl:items-start overflow-hidden rounded-full">
+              <a.div
+                style={{ scale }}
+                transition={{ duration: 0.8 }} // You can adjust the duration as needed
+              >
+                <Image
+                  width={425}
+                  height={425}
+                  className="rounded-full"
+                  id="header__img_1"
+                  src="/img__lavander.jpg"
+                  alt="A field of lavender"
+                />
+              </a.div>
             </div>
             
           </div>
