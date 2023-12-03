@@ -18,6 +18,7 @@ const Method = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta property="og:locale" content="en_GB"/>
         <meta property="og:type" content="website"/>
+        <meta property="og:site_name" content="Teaching Method | French For All"/>
         <meta
           property="og:description"
           content="How I use proven teaching methods to help you drastically improve your French ability."

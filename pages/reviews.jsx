@@ -82,6 +82,7 @@ const Reviews = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta property="og:locale" content="en_GB"/>
         <meta property="og:type" content="website"/>
+        <meta property="og:site_name" content="Reviews | French For All"/>
         <meta
           property="og:description"
           content="Some of the many positive reviews that I've received over my years of teaching. I've helped countless people improve their French abilities."

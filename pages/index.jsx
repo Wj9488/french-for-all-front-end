@@ -58,6 +58,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:locale" content="en_GB" />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="French For All"/>
         <meta
           property="og:description"
           content="Get help from a professional native speaker with lessons personalised to you.

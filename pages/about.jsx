@@ -21,6 +21,7 @@ const About = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:locale" content="en_GB" />
         <meta property="og:type" content="website" />
+        <meta property="og:site_name" content="About | French For All"/>
         <meta
           property="og:description"
           content="Find out more about why I love teaching French and my experience from 25+ years of teaching."
