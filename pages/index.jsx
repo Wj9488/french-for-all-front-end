@@ -348,6 +348,9 @@ export default function Home() {
       </section>
 
       <section className="mb-20 mt-20 dark:opacity-80 rounded-2xl">
+      <h3 className="text-3xl xl:text-4xl 2xl:text-5xl font-semibold dark:text-neutral-200 my-10 lg:w-[60%]">
+              What some of my students had to say
+            </h3>
         <div className="grid lg:grid-cols-3 lg:grid-rows-1 grid-cols-1 grid-rows gap-2 lg:gap-5 mt-5 mb-5">
           <Link href="/reviews">
             <div className="mt-5 lg:mt-0 shadow-lg lg:hover:scale-105 transition-all bg-neutral-100 dark:bg-neutral-700 min-w-full rounded-2xl p-2 xl-mt-0">
@@ -443,9 +446,9 @@ export default function Home() {
         </div>
       </section>
 
-      <h4 className="font__quicksand font-semibold text-3xl mb-10 mt-20 text-center xl:text-left dark:text-neutral-200">
-        Pricing
-      </h4>
+      <h4 className="text-3xl xl:text-4xl 2xl:text-5xl my-10 font-semibold dark:text-neutral-200">
+              Pricing
+            </h4>
 
       <section className="flex-row lg:flex items-start justify-between gap-5">
         <div className="text-center xl:text-left xl:w-4/12 pricing__border_box dark:border-neutral-200 mt-3 lg:mt-0 p-5 rounded-xl flex justify-start items-center xl:justify-center">
