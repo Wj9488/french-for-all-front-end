@@ -134,32 +134,33 @@ export default function Home() {
       </header>
 
       <section className="explore__prompt_height desktop__view_only">
+        
         <div className="flex items-center justify-between mt-3">
           <div className="flex items-center gap-3 justify-around">
-            <svg
-              width="40"
-              height="40"
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                cx="20"
-                cy="20"
-                r="19.5"
-                className="stroke-black dark:stroke-neutral-100"
-              />
-              <path
-                d="M19.6464 26.3536C19.8417 26.5488 20.1583 26.5488 20.3536 26.3536L23.5355 23.1716C23.7308 22.9763 23.7308 22.6597 23.5355 22.4645C23.3403 22.2692 23.0237 22.2692 22.8284 22.4645L20 25.2929L17.1716 22.4645C16.9763 22.2692 16.6597 22.2692 16.4645 22.4645C16.2692 22.6597 16.2692 22.9763 16.4645 23.1716L19.6464 26.3536ZM19.5 12V26H20.5V12H19.5Z"
-                className="fill-black dark:fill-white"
-              />
-            </svg>
-            <p className="dark:text-neutral-200">Explore</p>
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="20"
+                  cy="20"
+                  r="19.5"
+                  className="stroke-black dark:stroke-neutral-100"
+                />
+                <path
+                  d="M19.6464 26.3536C19.8417 26.5488 20.1583 26.5488 20.3536 26.3536L23.5355 23.1716C23.7308 22.9763 23.7308 22.6597 23.5355 22.4645C23.3403 22.2692 23.0237 22.2692 22.8284 22.4645L20 25.2929L17.1716 22.4645C16.9763 22.2692 16.6597 22.2692 16.4645 22.4645C16.2692 22.6597 16.2692 22.9763 16.4645 23.1716L19.6464 26.3536ZM19.5 12V26H20.5V12H19.5Z"
+                  className="fill-black dark:fill-white"
+                />
+              </svg>
+              <p className="dark:text-neutral-200">Scroll</p>
           </div>
         </div>
       </section>
 
-      <section className="flex-row mt-20 md:mt-0 lg:mt-20 lg:mb-20 lg:gap-5 xl:gap-0 lg:flex items-start text-center lg:text-left justify-between">
+      <section className="flex-row mt-20 md:mt-0 lg:mt-20 lg:mb-20 lg:gap-5 xl:gap-0 lg:flex items-start text-center lg:text-left justify-between" id="explore">
         <div className="mb-10 xl:mb-5 lg:w-4/12 xl:w-3/12">
           <div className="flex gap-3 items-center justify-center lg:justify-start">
             <svg

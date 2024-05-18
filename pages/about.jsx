@@ -8,6 +8,7 @@ import Transition from "@/components/Transition";
 const About = () => {
   const { scrollYProgress } = useScroll();
   const scale = useTransform(scrollYProgress, [0, 1], [1.0, 1.5]);
+  
 
   const [isLoading, setLoading] = useState(true);
   return (
@@ -97,7 +98,7 @@ const About = () => {
                   className="fill-black dark:fill-white"
                 />
               </svg>
-              <p className="dark:text-neutral-200">Explore</p>
+              <p className="dark:text-neutral-200">Scroll</p>
             </div>
           </div>
         </section>

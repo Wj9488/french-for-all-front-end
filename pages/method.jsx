@@ -90,7 +90,7 @@ const Method = () => {
                   className="fill-black dark:fill-white"
                 />
               </svg>
-              <p className="dark:text-neutral-200">Explore</p>
+              <p className="dark:text-neutral-200">Scroll</p>
             </div>
           </div>
         </section>
